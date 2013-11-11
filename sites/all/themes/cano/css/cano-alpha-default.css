@@ -1,0 +1,7 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+#user-login-form .form-text {
+	width: 90%;
+	}
+#block-search-form .form-text {
+	width: 65%;
+	}

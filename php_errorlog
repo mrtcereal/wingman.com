@@ -1,0 +1,4 @@
+[12-Jan-2013 15:32:31] PHP Fatal error:  Unsupported operand types in /home/ddthemec/public_html/ddthemes.com/cano/modules/block/block.module on line 507
+[12-Jan-2013 15:32:31] PHP Fatal error:  Unsupported operand types in /home/ddthemec/public_html/ddthemes.com/cano/modules/block/block.module on line 507
+[17-Jan-2013 19:24:39] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/ddthemec/public_html/ddthemes.com/cano/modules/system/system.install on line 449
+[17-Jan-2013 19:24:39] PHP Parse error:  syntax error, unexpected $end in /home/ddthemec/public_html/ddthemes.com/cano/modules/system/system.install on line 449

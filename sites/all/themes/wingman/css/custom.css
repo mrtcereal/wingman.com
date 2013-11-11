@@ -1,0 +1,582 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,800,800italic,300,300italic);
+html {
+	height: 100%;
+}
+/* Body styles */
+body {
+	background-color: #f4f1e8;
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+
+/* links */
+
+a {
+	color: #006699;
+	text-decoration: none;
+}
+
+
+a:hover {
+	text-decoration: underline;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Top User Menu */
+#user-menu-bar {
+	background-color: #444;
+	color: #999;
+	font-size: .75em;
+	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .4);
+	box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .4);
+	height: 35px;
+}
+
+#user-menu-bar a {
+	color: #ccc;
+
+	font-weight: 600;
+}
+
+#user-menu-bar a:hover {
+	color: #c84e4e;
+}
+
+#user-menu-bar .block {
+	margin: 0 auto;	
+	text-align: right;
+	width: 980px;
+}
+
+#user-menu-bar ul.user-menu {
+	list-style-type: none;
+	padding-top: 4px;
+	margin-top: 0;
+}
+
+#user-menu-bar ul.user-menu li.welcome-back {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: url("../images/bg/bkg-red.png") #991111 repeat-x;
+	color: #fff;
+	margin-bottom: 4px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+
+#user-menu-bar ul.user-menu li.welcome-back a,#user-menu-bar ul.user-menu li.welcome-back a:hover {
+	color: #fff;
+}
+
+
+
+#user-menu-bar ul.user-menu li {
+	display: inline;
+	border-left: solid 1px #000;
+	margin-right: 8px;
+	padding-left: 8px;
+}
+
+#user-menu-bar ul.user-menu li.first {
+	border: 0;
+}
+
+
+/* Menu Styles + Header Styles */
+
+
+
+#header-inner {
+	margin: auto;
+	width: 980px;
+}
+
+#header {
+	background-color: rgba(0, 0, 0, .85);
+	background-image: none;
+	border-bottom: solid 1px rgba(255, 255, 255, .3);
+	width: 100%;
+}
+
+.front #header {
+	z-index: 399;
+ 	position: absolute;
+	top: 35px;
+}
+
+.front #header-inner {
+	
+	margin: auto;
+	width: 980px;
+
+	
+}
+
+
+#section-header #zone-branding-wrapper #zone-branding {
+	background: transparent;
+}
+
+
+#section-header #zone-branding-wrapper #region-branding {
+	background-color: transparent;
+	background-image: none;
+	
+}
+
+
+#header #logo {
+	margin-top: 15px;
+}
+
+#header .block {
+	margin-bottom: 0;
+}
+
+#section-header #zone-branding-wrapper #region-menu {
+	background-image: none;
+	
+	
+}
+
+
+/* Menu Styles */
+
+.header__region {
+	clear: none;
+}
+
+#block-superfish-1 {
+	padding-top: 0;
+	
+}
+
+#block-superfish-1 ul#superfish-1 {
+	border-left: solid 1px #000;
+	border-right: solid 1px rgba(255, 255, 255, .1);
+	padding-left: 0px;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+
+#block-superfish-1 span.sf-description {
+	display: none;
+}
+
+
+#block-superfish-1 li.sf-depth-1 {
+	font-size: 1.1em;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	border-right: solid 1px #000;
+	border-left: solid 1px rgba(255, 255, 255, .1);
+}
+
+#block-superfish-1 li.sf-depth-1 a {
+	padding: 39px 10px;
+}
+
+#block-superfish-1 .sf-menu.sf-style-cano ul li a {
+	background-image: none;
+}
+
+
+/* Page Wrapper */
+
+#page-wrapper {
+	background: url("../images/bg/page-title-bg.png") top center repeat-x;
+	padding-bottom: 80px;
+}
+
+/* Slider styles */
+
+.region-slideshow {
+	max-height: 686px;
+	overflow: hidden;
+	z-index: 100;
+	position: relative;
+	background: #000;
+}
+
+
+.flexslider {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	margin-bottom: 0px;
+	line-height: 0;
+}
+
+#block-views-front-slider-block .ei-slider .view-footer, #block-views-front-slider-block .ei-slider h2.slide-title {
+	display: none;
+}
+
+#block-block-37 {
+	background: url(../images/bg/intro-bg.png) top center no-repeat;
+    bottom: 0;
+	color: #fff;
+	display: block;
+    left: 37%;
+    margin: 0 auto;
+    position: absolute;
+    right: auto;
+	padding: 130px 11px 11px 11px;
+	top: auto;
+	bottom: 0;
+	text-align: center;
+    width: 350px;
+	z-index: 40;
+}
+
+#block-block-37 h2 {
+	background: transparent;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 0;
+	}
+
+#block-block-37 p {
+	font-size: 12px;
+	margin-top: 3px;
+	line-height: 1.5;
+}
+
+
+
+p.get-started {
+	padding: 14px 0px 7px 0;
+}
+
+a.get-started-button {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+    background-image: -moz-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
+    box-shadow: 0.5px 0.866px 0px 0px rgb( 255, 255, 255 );
+	color: #000;
+	font-size: 17px;
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1;
+	margin: 25px 0px;
+	padding: 5px 10px;
+	text-align: center;
+	text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+	text-transform: uppercase;
+}
+
+
+a.get-started-button:hover {
+	color: #990000;
+	background-image: -moz-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
+	text-shadow: none;
+}
+
+
+
+/* page - content elements */
+
+#page {
+	padding-top: 2em;
+}
+
+#main {
+	padding-top: 0;
+}
+
+#page #main #content {
+	background: #fff;
+	padding: 1em 1em;
+}
+
+
+/* Newest Wingmen Block */
+#block-views-new-wingmen-block-1 h2 {
+	font-weight: 300;
+	font-size: 1.2em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	
+}
+
+#block-views-new-wingmen-block-1 ul.pager {
+	font-size: .85em;
+	font-weight: bold;
+	padding-top: 1em;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+#block-views-new-wingmen-block-1 ul.pager .pager-current {
+	display: none;
+}
+
+/* User wingmen display on profile page */
+
+/* Profile header block */
+
+
+#block-views-wingman-user-friends-block-2 .profile-header-left img {
+	border: solid 3px #fff;
+	float: left;
+	margin-right: 1em;
+	width: 100px;
+}
+
+#block-views-wingman-user-friends-block-2 .profile-header-left h2 {
+	margin: 0;
+}
+
+#block-views-wingman-user-friends-block-2 .profile-header-left p {
+	margin: 0;
+}
+
+#block-views-wingman-user-friends-block-2 p.user-profile-details {
+	font-size: .875em;
+	font-weight: bold;
+	line-height: 1.3;
+	margin-top: 0;
+}
+
+#block-views-wingman-user-friends-block-2 p.user-profile-details span {
+	font-size: .7em;
+	font-weight: normal;
+	margin-right: 5px;
+	text-transform: uppercase;
+}
+
+
+#block-views-wingman-user-friends-block-2 p.add-wingman-button span a.flag-link-confirm {
+	-webkit-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
+	box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
+}
+
+
+#block-views-wingman-user-friends-block-2 p.add-wingman-button a.flag-link-confirm {
+	background-color: #6c6155;
+	-webkit-box-shadow:  0px 2px 2px 0px #665b50;
+	box-shadow:  0px 2px 2px 0px #665b50;
+	color: #fff;
+	font-weight: bold;
+	padding: .5em 1em;
+	text-transform: uppercase;
+}
+
+#block-views-wingman-user-friends-block-2 p.add-wingman-button a.flag-link-confirm:hover {
+	color: #ddd0a5;
+	text-decoration: none;
+}
+
+
+/* Profile menu block */
+ul.user-profile-menu {
+	list-style-type: none;
+	margin: 0 0 0 7px;
+	padding: 0;
+	width: 100%;
+}
+
+ul.user-profile-menu li a.active {
+	background: #fff;
+	color: #685d52;
+}
+
+ul.user-profile-menu li a {
+	background: #cdc7b2;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	margin-bottom: 4px;
+	padding: .5em 1em;
+}
+
+
+ul.user-profile-menu li a:hover {
+	background: #555;
+	text-decoration: none;
+}
+ 
+ul.user-profile-menu li a.active:hover {
+	background: #fff;
+}
+
+/* user profile views*/
+
+
+.page-user-wingmen #main h1#page-title, .page-user-activity #main h1#page-title {
+	border-bottom: solid 1px #f4f1e7;
+	font-size: 1em;
+	color: rgb( 85, 85, 85 );
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
+
+.view-content ul.user-list-photos {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.view-content ul.user-list-photos li {
+	line-height: 1.4;
+	float: left;
+	margin-right: 1em;
+	text-align: center;
+	width: 100px;
+}
+.view-content ul.user-list-photos li .views-field-field-last-name a {
+	font-size: .875em;
+	font-weight: bold;
+}
+
+
+.view-content ul.user-list-photos li .views-field-city, .view-content ul.user-list-photos li .views-field-php, .view-content ul.user-list-photos li .views-field-province, .view-content ul.user-list-photos li.flag-wrapper {
+	font-size: .7em;
+}
+
+
+
+/* profile user actrivity view */
+.page-user-activity .view-wingman-user-activity ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.page-user-activity .view-wingman-user-activity .views-field-message {
+	font-size: 1.2em;
+}
+
+.page-user-activity .view-wingman-user-activity ul li {
+	border-bottom: solid 1px #F4F1E7;
+	margin: 1em 0;
+	padding: 1em 0;
+}
+
+
+/* Why Wingman block in footer area */
+
+.why-wingman h2.block-title:after {
+    border-top-color: #666;
+    border-top-style: solid;
+    border-top-width: 1px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    z-index: 8;
+}
+
+#footer .why-wingman h2.block-title {
+	color: rgb( 221, 208, 165 );
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 800;
+	letter-spacing: 3px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    position: relative;
+	text-align: center;
+    text-transform: uppercase;
+}
+
+.why-wingman h2.block-title span {
+	background: #1C1C1C;
+	display: inline-block;
+	position: relative;
+	margin-top: -30px;
+	padding: 7px;
+	z-index: 9;
+	
+}
+
+
+
+
+/* footer */
+#footer-wrapper {
+	background-color: #1C1C1C;
+	width: 100%;
+	min-height: 80px;
+	position:absolute;
+	bottom:0;
+	left: 0;
+}
+
+
+#footer {
+	margin: auto;
+	width: 980px;
+}
+
+#footer {
+	padding-top: 1.5em;
+	font-size: .9em;
+}
+
+
+
+#footer strong, footer h3 {
+	color: #ccc;
+	font-family: 'Open Sans';
+	font-weight: 800;
+}
+
+#footer {
+	color: #999;
+}
+
+#footer .why-wingman .clear {
+	border-bottom: solid 1px #666;
+	height: 1px;
+	visibility: visible;
+	width: 100%;
+}
+
+
+/* Mobile styles */
+@media only screen 
+and (max-width : 768px) {
+ 	.front #block-views-front-slider-block .ei-title {display: none !important;}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 769px) {
+/* Styles */
+	.front #zone-header-wrapper {display: none;
+
+}
+

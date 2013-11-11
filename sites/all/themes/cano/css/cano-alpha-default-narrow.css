@@ -1,0 +1,7 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* #zone-branding-wrapper {background-color: #D54037;} */
+#zone-branding-wrapper { background: url("../images/bg/header-left-bg.png") repeat scroll 0 0 transparent; }
+div#block-jump-menu-jump-menu-m-main-menu {margin-top: 30px;}
+
+
+

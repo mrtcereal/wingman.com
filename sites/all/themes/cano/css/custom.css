@@ -1,0 +1,245 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,800,800italic,300,300italic);
+
+/* Body styles */
+html body.html {
+	background-color: #f4f1e8 !important;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body a {
+	font-style: normal;
+}
+
+
+
+/* Menu Styles + Header Styles */
+#section-header #zone-branding-wrapper {
+	background-color: rgba(0, 0, 0, .85);
+	background-image: none;
+	border-bottom: solid 1px rgba(255, 255, 255, .3);
+
+}
+
+.front #section-header #zone-branding-wrapper {
+	position: absolute;
+	top: 0;
+	z-index: 400;
+}
+
+
+#section-header #zone-branding-wrapper #zone-branding {
+	background: transparent;
+}
+
+
+#section-header #zone-branding-wrapper #region-branding {
+	background-color: transparent;
+	background-image: none;
+	
+}
+
+
+#zone-branding-wrapper #region-branding #logo {
+	margin-top: 15px;
+}
+
+
+#section-header #zone-branding-wrapper #region-menu {
+	background-image: none;
+	
+	
+}
+
+#region-menu #block-superfish-1 {
+	padding-top: 0;
+	
+}
+
+#region-menu #block-superfish-1 .block-inner ul#superfish-1 {
+	border-left: solid 1px #000;
+	border-right: solid 1px rgba(255, 255, 255, .1);
+	padding-left: 0px;
+}
+
+
+#region-menu #block-superfish-1 span.sf-description {
+	display: none;
+}
+
+
+#region-menu #block-superfish-1 li.sf-depth-1 {
+	font-size: 1.1em;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	border-right: solid 1px #000;
+	border-left: solid 1px rgba(255, 255, 255, .1);
+}
+
+#region-menu #block-superfish-1 li.sf-depth-1 a {
+	padding: 39px 10px;
+}
+
+#region-menu #block-superfish-1 .sf-menu.sf-style-cano ul li a {
+	background-image: none;
+}
+
+
+/* Slider styles */
+
+#block-views-front-slider-block .ei-slider {
+	height: 687px;
+}
+
+#block-views-front-slider-block .ei-slider .view-footer, #block-views-front-slider-block .ei-slider h2.slide-title {
+	display: none;
+}
+
+#block-views-front-slider-block .ei-title {
+	background: url(../images/bg/intro-bg.png) top center no-repeat;
+    bottom: 0;
+	display: block;
+    left: 37%;
+    margin: 0 auto;
+    position: absolute;
+    right: auto;
+	padding: 130px 11px 11px 11px;
+	top: auto;
+	text-align: center;
+    width: 350px;
+}
+
+#block-views-front-slider-block .ei-title h2 {
+	background: transparent;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 90%;
+}
+
+#block-views-front-slider-block .ei-title p {
+	font-family: 'Open Sans';
+	color: #fff;
+}
+
+p.get-started {
+	padding: 14px 0px 7px 0;
+}
+
+a.get-started-button {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+    background-image: -moz-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
+    box-shadow: 0.5px 0.866px 0px 0px rgb( 255, 255, 255 );
+	color: #000;
+	font-size: 17px;
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1;
+	margin: 25px 0px;
+	padding: 5px 10px;
+	text-align: center;
+	text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+	text-transform: uppercase;
+}
+
+
+a.get-started-button:hover {
+	color: #f4f1e8;
+	background-image: -moz-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
+	text-shadow: 1px 1px 0px rgb( 129, 109, 45 );
+	box-shadow: 0.5px 0.866px 0px 0px rgb( 0, 0, 0 );
+}
+
+/* Why Wingman block */
+
+.why-wingman h2.block-title:after {
+    border-top-color: #fff;
+    border-top-style: solid;
+    border-top-width: 1px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    z-index: 2;
+}
+
+#section-footer .why-wingman h2.block-title {
+	color: rgb( 221, 208, 165 );
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 800;
+	letter-spacing: 3px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    position: relative;
+	text-align: center;
+    text-transform: uppercase;
+}
+
+.why-wingman h2.block-title span {
+	background: #1C1C1C;
+	display: inline-block;
+	position: relative;
+	margin-top: -30px;
+	padding: 7px;
+	z-index: 3;
+	
+}
+
+
+/* Page Title Headers */
+
+#section-header #zone-header-wrapper {
+	background-position: center top;
+}
+
+
+
+
+/* footer */
+
+#section-footer #zone-footer-wrapper {
+	padding-top: 1.5em;
+	font-size: 1.1em;
+}
+
+#section-footer h1, #section-footer h2, #section-footer h3, #section-footer h4, #section-footer h5, #section-footer h6 {
+	color: #ddd;
+}
+
+#section-footer strong {
+	color: #ddd;
+	font-family: 'Open Sans';
+	font-weight: 800;
+}
+
+#region-footer-first {
+	color: #ddd;
+}
+
+
+
+/* Mobile styles */
+@media only screen 
+and (max-width : 768px) {
+ 	.front #block-views-front-slider-block .ei-title {display: none !important;}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 769px) {
+/* Styles */
+	.front #zone-header-wrapper {display: none;
+
+}
+
