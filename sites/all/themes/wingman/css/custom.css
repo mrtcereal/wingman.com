@@ -32,6 +32,26 @@ a:hover {
 	clear: both;
 }
 
+
+/* Custom ajax throbber style */
+.ajax-progress .throbber {
+  /* New icon */
+  background: transparent url(../images/loading.gif) no-repeat 0px 0px;
+  /* icon is 15px square */
+  height: 15px;
+  width: 15px;
+  /* Alignment, may tweak to suit */
+  float: left; /* LTR */
+  clear:both;
+  margin: 2px 2px 6px 2px;
+}
+.ajax-progress-throbber .message {
+  /* Hide the "please wait" msg */
+  display: none;
+}
+
+
+
 /* Top User Menu */
 #user-menu-bar {
 	background-color: #444;
@@ -122,7 +142,6 @@ a:hover {
 	margin: auto;
 	width: 980px;
 
-	
 }
 
 
@@ -231,10 +250,12 @@ a:hover {
     bottom: 0;
 	color: #fff;
 	display: block;
-    left: 37%;
+   /* left: 37%; */
+	left: 0;
     margin: 0 auto;
     position: absolute;
-    right: auto;
+    /*right: auto;*/
+	right: 0;
 	padding: 130px 11px 11px 11px;
 	top: auto;
 	bottom: 0;
