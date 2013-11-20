@@ -520,6 +520,92 @@ ul.user-profile-menu li a.active:hover {
 }
 
 
+
+/* User edit forms */
+
+.page-user-edit #page #main #content {
+	background: transparent;
+}
+
+.page-user-edit #page #main #content h1#page-title {
+	display: none;
+}
+
+.page-user-edit .vertical-tabs {
+	border: 0;
+	background: #fff;
+}
+
+.page-user-edit .vertical-tabs ul.vertical-tabs-list {
+	border: 0;
+	margin: 0px 0 0px -15em;
+}
+
+.vertical-tabs ul.vertical-tabs-list li.selected {
+	border: 0;
+	background: #fff;	
+}
+
+.vertical-tabs ul.vertical-tabs-list li.selected:hover {
+	background: #fff;
+}
+
+.vertical-tabs ul.vertical-tabs-list li.selected a, .vertical-tabs ul.vertical-tabs-list li.selected a strong {
+	color: #685d52;
+}
+
+.vertical-tabs ul.vertical-tabs-list li {
+	border:0;
+	background: #cdc7b2;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.vertical-tabs ul.vertical-tabs-list li:hover {
+	background: #555;
+}
+
+.vertical-tabs ul.vertical-tabs-list li a {
+	color: #fff;
+}
+
+.vertical-tabs ul.vertical-tabs-list li a:hover, .vertical-tabs ul.vertical-tabs-list li a:hover strong  {
+	outline: 0;
+	text-decoration: none;
+}
+
+.page-user-edit fieldset#edit-flag-friend {
+	margin-left: 15em;
+}
+
+.page-user-edit input[type='submit'] {
+	margin-left: 15em;
+}
+
+/*
+
+ul.user-profile-menu li a.active {
+	background: #fff;
+	color: #685d52;
+}
+
+ul.user-profile-menu li a {
+	background: #cdc7b2;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	margin-bottom: 4px;
+	padding: .5em 1em;
+}
+
+
+ul.user-profile-menu li a:hover {
+	background: #555;
+	text-decoration: none;
+}*/
+
+
 /* Why Wingman block in footer area */
 
 .why-wingman h2.block-title:after {

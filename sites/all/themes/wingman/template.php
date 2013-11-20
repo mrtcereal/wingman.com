@@ -134,11 +134,11 @@ function wingman_preprocess_block(&$variables, $hook) {
 /*function wingman_theme() {
 return array(
 // The form ID.
-'user_profile_form' => array(
+'user_edit_form' => array(
 // Forms always take the form argument.
 'arguments' => array('form' => NULL),
 'render element' => 'form',
-'template' => 'templates/user-profile-edit',
+'template' => 'templates/user-edit',
 ),
 );
 }*/
