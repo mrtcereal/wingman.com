@@ -1,0 +1,4 @@
+name = Wingman Profile Views Titles
+description = Uses a user's First Name to override the Wingman Views profile titles.
+core = 7.x
+package = Custom Modules

@@ -412,6 +412,8 @@ a.get-started-button:hover {
 }
 
 
+
+
 /* Profile menu block */
 ul.user-profile-menu {
 	list-style-type: none;
@@ -447,7 +449,7 @@ ul.user-profile-menu li a.active:hover {
 /* user profile views*/
 
 
-.page-user-wingmen #main h1#page-title, .page-user-activity #main h1#page-title {
+.page-user-wingmen #main h1#page-title, .page-user-activity #main h1#page-title, .page-user-profile #main h1#page-title {
 	border-bottom: solid 1px #f4f1e7;
 	font-size: 1em;
 	color: rgb( 85, 85, 85 );
@@ -456,6 +458,11 @@ ul.user-profile-menu li a.active:hover {
 	line-height: 1;
 	margin-bottom: 1em;
 	padding-bottom: 1em;
+}
+
+.page-user-wingmen #main .views-field-uid {
+	font-size: 0.7em;
+	margin-top: .5em;
 }
 
 
@@ -500,6 +507,16 @@ ul.user-profile-menu li a.active:hover {
 	border-bottom: solid 1px #F4F1E7;
 	margin: 1em 0;
 	padding: 1em 0;
+}
+
+/* profile about view */
+
+.page-user-profile #main h3 {
+	color: #CDC7B2;
+	font-size: .8em;
+	letter-spacing: .15em;
+	margin-bottom: 0;
+	text-transform: uppercase;
 }
 
 

@@ -1,0 +1,46 @@
+<?php 
+
+/**
+* @file
+* Overrides Views titles for Wingman profile views
+*/
+
+function wm_profile_view_titles_preprocess_views_view(&$vars) {
+	
+  if ($vars['view']->name == 'wingman_user_activity') {
+	
+	// Get user's first name from views argument
+	$view = views_get_current_view();
+	$arg0 = $view->args[0];
+	$account = user_load($arg0);
+	$custom_title =  $account->field_first_name['und']['0']['value'] . "'s Activity";
+    
+	// Override view's title,
+    $vars['view']->build_info['title'] = $custom_title;
+  }
+
+  if ($vars['view']->current_display == 'all_wingmen_page') {
+	
+	// Get user's first name from views argument
+	$view = views_get_current_view();
+	$arg0 = $view->args[0];
+	$account = user_load($arg0);
+	$custom_title =  $account->field_first_name['und']['0']['value'] . "'s Wingmen";
+    
+	// Override view's title,
+    $vars['view']->build_info['title'] = $custom_title;
+  }
+
+  if ($vars['view']->name == 'wingman_user_profile') {
+	
+	// Get user's first name from views argument
+	$view = views_get_current_view();
+	$arg0 = $view->args[0];
+	$account = user_load($arg0);
+	$custom_title = "About " . $account->field_first_name['und']['0']['value'];
+    
+	// Override view's title,
+    $vars['view']->build_info['title'] = $custom_title;
+  }
+
+}
