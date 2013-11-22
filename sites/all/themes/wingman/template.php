@@ -143,5 +143,67 @@ return array(
 );
 }*/
 
+/**
+ * Implements hook_field_extra_fields().
+ */
+function wingman_field_extra_fields() {
+	
+	$extra['user']['user'] = array(
+	    'display' => array(
+	      'flag_friend_request_notify' => array(
+	        'label' => 'Friend Notification',
+	        'description' => t('Notify User when friendship is requested.'),
+	        'weight' => 0,
+	      ),
+	    ),
+	  );
+  return $extra;
+
+ /* $return = array();
+  $info = entity_get_info('heartbeat_activity');
+  foreach (array_keys($info['bundles']) as $bundle) {
+    $return['heartbeat_activity'][$bundle] = array(
+      'display' => array(
+        'avatar' => array(
+          'label' => 'Avatar',
+          'description' => t('Heartbeat activity avatar element'),
+          'weight' => 0,
+        ),
+        'username' => array(
+          'label' => 'Username',
+          'description' => t('Heartbeat activity username'),
+          'weight' => 1,
+        ),
+        'message' => array(
+          'label' => 'Message',
+          'description' => t('Heartbeat activity message element'),
+          'weight' => 2,
+        ),
+        'time' => array(
+          'label' => 'Time',
+          'description' => t('Heartbeat activity time element'),
+          'weight' => 3,
+        ),
+        'buttons' => array(
+          'label' => 'Buttons',
+          'description' => t('Heartbeat activity buttons'),
+          'weight' => 4,
+        ),
+      ),
+    );
+  }
+
+  $return['user']['user'] = array(
+    'form' => array(
+      'heartbeat' => array(
+        'label' => 'Heartbeat activity templates',
+        'description' => t('Heartbeat activity template form element.'),
+        'weight' => 6,
+      ),
+    ),
+  );
+
+  return $return;*/
+}
 
 
