@@ -1,0 +1,23 @@
+<?php 
+
+/**
+* @file
+* Adds Flag_Friend Notification Settings to the User Manage Fields Page
+*/
+
+/**
+ * Implements hook_field_extra_fields().
+ */
+function wm_friend_notification_display_field_extra_fields() {
+	$extra['user']['user'] = array(
+	    'form' => array(
+	      'flag_friend' => array(
+	        'label' => 'Friend Notification',
+	        'description' => t('User Notification Settings for Flag Friend.'),
+	        'weight' => 0,
+	      ),
+	    ),
+	  );
+  return $extra;
+}
+

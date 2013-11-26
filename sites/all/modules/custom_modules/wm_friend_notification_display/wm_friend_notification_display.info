@@ -1,0 +1,4 @@
+name = Wingman Friend Notification Display
+description = Adds Flag_Friend Notification Settings to the User Manage Fields Page
+core = 7.x
+package = Custom Modules

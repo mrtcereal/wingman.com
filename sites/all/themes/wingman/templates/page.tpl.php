@@ -10,8 +10,9 @@
 <div id="wrapper">
 
 <div id="user-menu-bar">
-
-	<?php print render($page['user_menu_bar']); ?>
+	<div id="user-menu-bar-inner">
+		<?php print render($page['user_menu_bar']); ?>
+	</div>
 </div>
 <header class="header" id="header" role="banner">
 	<div id="header-inner" class="container_12">
