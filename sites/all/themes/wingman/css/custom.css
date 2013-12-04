@@ -130,7 +130,10 @@ label {
 }
 
 #user-menu-bar a:hover {
-	color: #c84e4e;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 3px #660000;
+	        filter: dropshadow(color=#660000, offx=1, offy=1);
 }
 
 #user-menu-bar .block {
@@ -195,20 +198,38 @@ label {
 }
 
 #user-menu-bar #block-superfish-2 ul ul {
-	background: url("../images/bg/bkg-red.png") #991111 repeat-x;
+	background: #a92f2f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a92f2f 0%, #ce5454 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a92f2f), color-stop(100%,#ce5454)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a92f2f 0%,#ce5454 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a92f2f 0%,#ce5454 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a92f2f 0%,#ce5454 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a92f2f 0%,#ce5454 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a92f2f', endColorstr='#ce5454',GradientType=0 ); /* IE6-9 */
+	border: solid 1px rgba(255, 255, 255, .2);
+	-webkit-border-radius: 0px 0px 8px 8px;
+ 	border-radius: 0px 0px 8px 8px;
+	padding-right: 0;
 	text-align: left;
 }
 
+.sf-menu li:hover ul, .sf-menu li.sfHover ul {
+    left: 0;
+    top: 2em;
+}
+
 #user-menu-bar #block-superfish-2 ul ul a {
-	border-bottom: #000 solid 1px;
+	border-bottom: #660000 solid 1px;
 	color: #fff;
-	font-weight: normal;
+	font-weight: bold;
 	padding: .5em;
+	margin-right: 0;
 	
 }
 
 #user-menu-bar #block-superfish-2 ul ul li.last a {
 	border-bottom: 0px;
+	padding-bottom: 0;
 }
 
 /* Menu Styles + Header Styles */
@@ -507,6 +528,9 @@ a.get-started-button:hover {
 	text-decoration: none;
 }
 
+#block-views-wingman-user-friends-block-2 .views-field-privatemsg-link {
+	margin-left: 654px;
+}
 
 
 
@@ -594,7 +618,7 @@ ul.user-profile-menu li a.active:hover {
 
 
 
-/* profile user actrivity view */
+/* profile user activity view */
 .page-user-activity .view-wingman-user-activity ul {
 	list-style-type: none;
 	margin: 0;
@@ -789,7 +813,7 @@ ul.user-profile-menu li a:hover {
 
 
 /*Messages*/
-.page-messages h1#page-title {
+.page-messages h1#page-title, h2.privatemsg-reply {
 	border-bottom: solid 1px #f4f1e7;
 	font-size: 1em;
 	color: rgb( 85, 85, 85 );
@@ -844,6 +868,31 @@ ul.user-profile-menu li a:hover {
 	margin-top: 2px;
 }
 
+.page-messages-view .privatemsg-author-avatar {
+	width: 8%;
+}
+
+.page-messages-view .privatemsg-message-column {
+	width: 90%;
+}
+
+div.privatemsg-message-information {
+	border-bottom: solid 1px #f4f1e7;
+}
+
+.page-messages-view .privatemsg-message-participants {
+	border-bottom: 0px;
+	font-size: .8em;
+	padding-bottom: 10px;
+}
+
+ul.privatemsg-message-actions {
+	font-size: .8em;
+}
+
+.page-messages-view #privatemsg-new {
+	margin-top: 3em;
+}
 
 /* Wingman (Flag Friend) Management Styles */
 
