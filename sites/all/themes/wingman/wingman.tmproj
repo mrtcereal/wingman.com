@@ -10,7 +10,7 @@
 			<key>filename</key>
 			<string>css/custom.css</string>
 			<key>lastUsed</key>
-			<date>2013-12-03T00:52:28Z</date>
+			<date>2013-12-10T00:49:20Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -50,14 +50,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>41</integer>
+				<integer>18</integer>
 				<key>line</key>
-				<integer>135</integer>
+				<integer>1065</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>125</integer>
+			<integer>1000</integer>
 		</dict>
 		<key>css/layouts/fixed.css</key>
 		<dict>
@@ -97,6 +97,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{777, 65}, {1281, 1230}}</string>
+	<string>{{1651, 84}, {1008, 1261}}</string>
 </dict>
 </plist>

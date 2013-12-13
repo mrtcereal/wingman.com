@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!-- git web interface version 1.7.3.GIT, (C) 2005-2006, Kay Sievers <kay.sievers@vrfy.org>, Christian Gierke -->
+<!-- git core binaries version 1.8.2.1 -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="gitweb/1.7.3.GIT git/1.8.2.1"/>
+<meta name="robots" content="index, nofollow"/>
+<title>drupalcode.org Git - sandbox/xandeadx/2041395.git/blob - views_ucc.module</title>
+<base href="http://drupalcode.org" />
+<link rel="stylesheet" type="text/css" href="/gitweb.css"/>
+<link rel="stylesheet" type="text/css" href="/highlight.css"/>
+<link rel="alternate" title="sandbox/xandeadx/2041395.git - history of views_ucc.module - RSS feed" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/rss?f=views_ucc.module" type="application/rss+xml" />
+<link rel="alternate" title="sandbox/xandeadx/2041395.git - history of views_ucc.module - RSS feed (no merges)" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/rss?f=views_ucc.module;opt=--no-merges" type="application/rss+xml" />
+<link rel="alternate" title="sandbox/xandeadx/2041395.git - history of views_ucc.module - Atom feed" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/atom?f=views_ucc.module;opt=--no-merges" type="application/atom+xml" />
+<link rel="alternate" title="sandbox/xandeadx/2041395.git - history of views_ucc.module - Atom feed (no merges)" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/atom?f=views_ucc.module;opt=--no-merges" type="application/atom+xml" />
+<link rel="shortcut icon" href="/git-favicon.png" type="image/png" />
+</head>
+<body>
+<div class="page_header">
+<a title="git homepage" href="http://drupal.org/"><img src="/git-logo.png" width="72" height="27" alt="git" class="logo"/></a><a href="/">projects</a> / <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git">sandbox/xandeadx/2041395.git</a> / blob
+</div>
+<form method="get" action="http://drupalcode.org/sandbox/xandeadx/2041395.git" enctype="application/x-www-form-urlencoded">
+<div class="search">
+<input name="a" type="hidden" value="search" />
+<input name="h" type="hidden" value="324eb37c8ebe5c5d4fe3e921597a1660bbf41f90" />
+<select name="st" >
+<option selected="selected" value="commit">commit</option>
+<option value="grep">grep</option>
+<option value="author">author</option>
+<option value="committer">committer</option>
+<option value="pickaxe">pickaxe</option>
+</select><sup><a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/search_help">?</a></sup> search:
+<input type="text" name="s"  />
+<span title="Extended regular expression"><label><input type="checkbox" name="sr" value="1" />re</label></span></div>
+</form>
+<div class="page_nav">
+<a href="http://drupalcode.org/sandbox/xandeadx/2041395.git">summary</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/shortlog">shortlog</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/log">log</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/commit/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90">commit</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/commitdiff/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90">commitdiff</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/tree/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90">tree</a><br/>
+<a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blame/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module">blame</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/history/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module">history</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob_plain/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module">raw</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/HEAD:/views_ucc.module">HEAD</a><br/>
+</div>
+<div class="header">
+<a class="title" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/commit/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90">Initial commit.</a>
+</div>
+<div class="page_path"><a title="tree root" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/tree/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90">[sandbox/xandeadx/2041395.git]</a> / <a title="views_ucc.module" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob_plain/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module">views_ucc.module</a><br/></div>
+<div class="page_body">
+<div class="pre"><a id="l1" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module#l1" class="linenr">   1</a> <span class="hl sym">&lt;</span>?php</div>
+<div class="pre"><a id="l2" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module#l2" class="linenr">   2</a> </div>
+<div class="pre"><a id="l3" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module#l3" class="linenr">   3</a> <span class="hl com">/**</span></div>
+<div class="pre"><a id="l4" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module#l4" class="linenr">   4</a> <span class="hl com"> * Implements hook_views_api()</span></div>
+<div class="pre"><a id="l5" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module#l5" class="linenr">   5</a> <span class="hl com"> */</span></div>
+<div class="pre"><a id="l6" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module#l6" class="linenr">   6</a> <span class="hl kwa">function</span> <span class="hl kwd">views_ucc_views_api</span><span class="hl sym">() {</span></div>
+<div class="pre"><a id="l7" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module#l7" class="linenr">   7</a>   <span class="hl kwa">return array</span><span class="hl sym">(</span><span class="hl str">'api'</span> <span class="hl sym">=&gt;</span> <span class="hl num">3</span><span class="hl sym">);</span></div>
+<div class="pre"><a id="l8" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module#l8" class="linenr">   8</a> <span class="hl sym">}</span></div>
+</div><div class="page_footer">
+<div class="cachetime">Cache Last Updated: Fri Dec 13 00:40:50 2013 GMT</div>
+<!--
+	Full URL: |/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc.module?|
+	URL Hash: |475d2997acc387f2c2ac3e15f802aebd|
+-->
+<div class="page_footer_text">For more information about this repository, visit the project page at https://drupal.org/sandbox/xandeadx/2041395</div>
+<a class="rss_logo" title="history of views_ucc.module RSS feed" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/rss?f=views_ucc.module">RSS</a>
+<a class="rss_logo" title="history of views_ucc.module Atom feed" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/atom?f=views_ucc.module">Atom</a>
+</div>
+<script type="text/javascript" src="/gitweb.js"></script>
+</body>
+</html>

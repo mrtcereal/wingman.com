@@ -146,5 +146,11 @@ return array(
 
 
 
+function wingman_form_comment_form_alter(&$form, &$form_state, $form_id) {
+  $label = t('Logged in as');
+  if (isset($form['author']['_author'])) {
+    $form['author']['_author']['#title'] = $label;
+  }
+}
 
 

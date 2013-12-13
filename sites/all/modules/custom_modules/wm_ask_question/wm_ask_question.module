@@ -1,0 +1,120 @@
+<?php 
+
+/**
+* @file
+* Displays block to ask question - redirects to Question and Answer creation form
+*/
+
+/**
+ * Implements hook_block_info().
+ *
+ * This function tells drupal about our block.
+ *
+ * For more information on this function, see:
+ * http://api.drupal.org/api/drupal/modules block block.api.php/function/hook_block_info/7
+ */
+function wm_ask_question_block_info() {
+        // Create an array that will hold our blocks
+        $blocks = array();
+ 
+        // Create a key in our $blocks array that
+        // defines our block.  
+        $blocks['wm_ask_question_form'] = array(
+                // 'info' is what you will see when viewing the blocks admin page.
+                // Note that we use the t() (translate) function which lets drupal
+                // translate any text passed in if needed.
+                'info' => t('Ask A Question'),
+                // 'cache' how this block will be cached
+                'cache' => DRUPAL_CACHE_GLOBAL,
+        );
+ 
+        // Note, if you wanted to define multiple blocks, you 
+        // could simply define more blocks just like above.
+ 
+        // Finally, we return the $blocks array.
+        return $blocks;
+}
+ 
+/**
+ * Implements hook_block_view().
+ * 
+ * This function tells drupal how to define our block when viewed.
+ *
+ * For more information on this function, see:
+ * http://api.drupal.org/api/drupal/modules block block.api.php/function/hook_block_view/7
+ */
+function wm_ask_question_block_view($delta = '') {
+        // Create an array that will be returned as our block
+        $block = array();
+ 
+        // Since hook_block_view is called for every block,
+        // Drupal passes in $delta (the key of the blocks defined
+        // in hook_block_info.  In our case, we're checking for
+        // $delta to be 'wm_ask_question_form'.
+        switch($delta) {
+                case 'wm_ask_question_form':
+                        // Since this $delta matches our case, we'll define
+                        // the subject and contents.
+ 
+                        // 'subject' can be blank ('') or anything you wish to define.
+                        $block['subject'] = t('Ask A Question');
+ 
+                        // 'content' are just that, the contents of the block.
+                        // In our case, we will be showing a form.
+                        // We use drupal_get_form() to return a drupal-built form.
+                        // Note that the parameter passed to drupal_get_form is the name
+                        // of the function we will build below to define our form.
+                        // This can be any function name we define below.
+                        $block['content'] = drupal_get_form('wm_ask_question_form');
+                break;
+        }
+ 
+        // Finally, we return the $block array.
+        return $block;
+}
+ 
+/**
+ * Define the form to be returned.
+ *
+ * Note that drupal passes in two parameters,
+ * $form - which holds all of the elements of the form
+ * $form_state - a special array of settings & values needed by Drupal
+ */
+function wm_ask_question_form($form, &$form_state) {
+ 
+        $form['question'] = array(
+                '#type' => 'textfield',
+                '#required' => TRUE,
+                '#title' => t("Ask A Question"),
+                // Optional description
+                //'#description' => t('Dscription'),
+        );
+ 
+        $form['submit'] = array(
+                '#type' => 'submit',
+                // #value is the text to display inside the button
+                '#value' => t('Ask'),
+        );
+ 
+        return $form;
+}
+
+
+/*
+ * Define a submit funciton that drupal will
+ * automatically call when submit is pressed (and all validators pass)
+ */
+function wm_ask_question_form_submit($form, &$form_state) {
+        // Get the submitted value
+        $question = $form_state['values']['question'];
+		$redirect_url = 'http://wingmandev.com/node/add/question-and-answer?edit[title]=' . $question;
+	//	$form_state['redirect'] = 'http://www.google.com';
+	//	    drupal_redirect_form($form_state);
+ 
+        // Check the submission results and redirect to node creation form, or display error.
+       if(!empty($question)) {
+                drupal_goto($redirect_url);
+        } else {
+                drupal_set_message(t('Please enter a question', 'error'));
+        } 
+}

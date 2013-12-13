@@ -1,0 +1,5 @@
+name = Views user comment count
+description = Views field handler for display number of user comments
+core = 7.x
+files[] = views_ucc_views_handler_field_user_comment_count.inc
+files[] = views_ucc_views_handler_sort_user_comment_count.inc

@@ -1,0 +1,4 @@
+name = Wingman Ask A Question Block
+description = Displays Ask Question form in block and redirects to node creation form.
+core = 7.x
+package = Custom Modules
