@@ -117,6 +117,9 @@ label {
 }
 
 
+.header__logo {
+	padding-right: 1em;
+}
 
 /* Top User Menu */
 
@@ -397,7 +400,7 @@ left: 26px;
 }
 
 #block-superfish-1 li.sf-depth-1 a {
-	padding: 39px 10px;
+	padding: 39px 1em;
 }
 
 #block-superfish-1 .sf-menu.sf-style-cano ul li a {
@@ -522,7 +525,7 @@ a.get-started-button:hover {
 
 #page #main #content {
 	background: #fff;
-	padding: 1em 1em;
+	padding: 16px;
 }
 
 
@@ -610,6 +613,11 @@ a.get-started-button:hover {
 
 
 /* Profile menu block */
+#block-block-42, #block-block-40 {
+	margin-left: -20px;
+}
+
+
 ul.user-profile-menu {
 	list-style-type: none;
 	margin: 0 0 0 7px;
@@ -1039,6 +1047,44 @@ ul.privatemsg-message-actions {
 
 
 /* Answers */
+.page-answers h1#page-title {
+	display: none;
+}
+
+.page-answers .view-header {
+	background: #cdc7b2;
+	width: 100%;
+	padding-right: 1em;
+}
+
+.page-answers ul.answer-menu {
+	list-style-type: none;
+	margin: -1em -1em 0 -1em;
+	padding: 0;
+	width: 100%;
+}
+
+.page-answers ul.answer-menu li {
+}
+
+.page-answers ul.answer-menu li a {
+	background: #cdc7b2;
+	border-right: 1px solid #fff;
+	color: #fff;
+	font-size: .9em;
+	font-weight: bold;
+	float: left;
+	padding: 0 1em;
+	text-transform: uppercase;
+}
+
+.page-answers ul.answer-menu li a:hover, .page-answers ul.answer-menu li a.active  {
+	background: #fff;
+	color: #cdc7b2;
+	text-decoration: none;
+}
+
+
 .region-highlighted #block-block-43 h2.title {
 	color: #6c6155;
 	margin: 0;
@@ -1057,7 +1103,6 @@ ul.privatemsg-message-actions {
 }
 
 .page-answers .views-row {
-	border-top: solid 1px #f4f1e7;
 	border-bottom: solid 1px #f4f1e7;
 	font-size: .9em;
 	margin: 1.5em 0;
@@ -1074,11 +1119,13 @@ ul.privatemsg-message-actions {
 	width: 65px;
 }
 
-.page-answers .views-row .views-field-nothing-1 {
+
+
+.page-answers .question-right {
 	margin-left: 100px;
 }
 
-.page-answers .views-row .views-field-nothing-1 h2 {
+.page-answers .views-row .question-right h2 {
 	font-size: 1.2em;
 	line-height: 1;
 	margin: 0 0 .8em;
@@ -1188,12 +1235,15 @@ top: -7px;
 left: 23px;
 }
 
-.field-name-field-official-answer {
+.field-name-field-official-answer, .views-field-field-official-answer .field-content {
 	background: url('../images/official-answer.png') top left no-repeat;
 	min-height: 60px;
 	padding-left: 75px;
+	font-size: .9em;
+	line-height: 1.3;
 	
 }
+
 
 a.answer-this {
 	border: 0;
@@ -1295,6 +1345,80 @@ a.answer-this:hover {
 	text-shadow: 1px 1px 0 #FFFFFF;
 	vertical-align: middle;
 }
+
+
+
+
+/* Most Active Answerers */
+
+#block-block-44 h2.block-title {
+	border-bottom: solid 1px #b4ab90;
+	font-size: .9em;
+	color: rgb( 85, 85, 85 );
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
+#block-block-44 ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#block-block-44 li {
+	font-size: .9em;
+	line-height: 1.2em;
+}
+
+#block-block-44 li a {
+	font-weight: bold;
+}
+
+#block-block-44 li span {
+	font-size: .8em;
+}
+
+#block-block-44 img {
+	float: left;
+	height: auto;
+	margin-right: 10px;
+	width: 40px;
+}
+
+
+
+/* EVENTS */
+
+.view-events .views-row {
+	border-bottom: solid 1px #F4F1E7;
+	min-height: 100px;
+	padding: 1em 0;
+}
+
+.view-events .views-field-field-event-image img {
+	float: left;
+	margin-right: 1em;
+	height: 100px;
+	margin-bottom: 1em;
+}
+
+.view-events .views-row h2 {
+	font-size: 1em;
+	line-height: 1.3;
+	margin-top: 0;
+	margin-bottom: .5em;
+	text-transform: uppercase;
+}
+
+.view-events .event-info {
+	color: #6c6155;
+	font-size: .8em;
+}
+
+
 
 /* Why Wingman block in footer area */
 

@@ -10,7 +10,7 @@
 			<key>filename</key>
 			<string>css/custom.css</string>
 			<key>lastUsed</key>
-			<date>2013-12-10T00:49:20Z</date>
+			<date>2013-12-13T21:19:35Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -18,7 +18,7 @@
 			<key>filename</key>
 			<string>css/layouts/fixed.css</string>
 			<key>lastUsed</key>
-			<date>2013-11-19T23:50:16Z</date>
+			<date>2013-12-13T21:19:35Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -38,7 +38,13 @@
 			<key>filename</key>
 			<string>template.php</string>
 			<key>lastUsed</key>
-			<date>2013-11-15T21:06:25Z</date>
+			<date>2013-12-12T00:25:49Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>templates/node--question_and_answer.tpl.php</string>
+			<key>lastUsed</key>
+			<date>2013-12-12T00:48:16Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -50,28 +56,56 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>18</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>1065</integer>
+				<integer>1245</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>1000</integer>
+			<integer>1190</integer>
 		</dict>
 		<key>css/layouts/fixed.css</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>12</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>105</integer>
+				<integer>118</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>78</integer>
+			<integer>76</integer>
+		</dict>
+		<key>template.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>26</integer>
+				<key>line</key>
+				<integer>149</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>87</integer>
+		</dict>
+		<key>templates/node--question_and_answer.tpl.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>21</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 		<key>templates/page.tpl.php</key>
 		<dict>
@@ -93,10 +127,12 @@
 		<string>templates/page.tpl.php</string>
 		<string>css/layouts/fixed.css</string>
 		<string>css/custom.css</string>
+		<string>templates/node--question_and_answer.tpl.php</string>
+		<string>template.php</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1651, 84}, {1008, 1261}}</string>
+	<string>{{1543, 88}, {1008, 1261}}</string>
 </dict>
 </plist>

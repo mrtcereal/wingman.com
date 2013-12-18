@@ -1,74 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<!-- git web interface version 1.7.3.GIT, (C) 2005-2006, Kay Sievers <kay.sievers@vrfy.org>, Christian Gierke -->
-<!-- git core binaries version 1.8.2.1 -->
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<meta name="generator" content="gitweb/1.7.3.GIT git/1.8.2.1"/>
-<meta name="robots" content="index, nofollow"/>
-<title>drupalcode.org Git - sandbox/xandeadx/2041395.git/blob - views_ucc_views_handler_field_user_comment_count.inc</title>
-<base href="http://drupalcode.org" />
-<link rel="stylesheet" type="text/css" href="/gitweb.css"/>
-<link rel="stylesheet" type="text/css" href="/highlight.css"/>
-<link rel="alternate" title="sandbox/xandeadx/2041395.git - history of views_ucc_views_handler_field_user_comment_count.inc - RSS feed" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/rss?f=views_ucc_views_handler_field_user_comment_count.inc" type="application/rss+xml" />
-<link rel="alternate" title="sandbox/xandeadx/2041395.git - history of views_ucc_views_handler_field_user_comment_count.inc - RSS feed (no merges)" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/rss?f=views_ucc_views_handler_field_user_comment_count.inc;opt=--no-merges" type="application/rss+xml" />
-<link rel="alternate" title="sandbox/xandeadx/2041395.git - history of views_ucc_views_handler_field_user_comment_count.inc - Atom feed" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/atom?f=views_ucc_views_handler_field_user_comment_count.inc;opt=--no-merges" type="application/atom+xml" />
-<link rel="alternate" title="sandbox/xandeadx/2041395.git - history of views_ucc_views_handler_field_user_comment_count.inc - Atom feed (no merges)" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/atom?f=views_ucc_views_handler_field_user_comment_count.inc;opt=--no-merges" type="application/atom+xml" />
-<link rel="shortcut icon" href="/git-favicon.png" type="image/png" />
-</head>
-<body>
-<div class="page_header">
-<a title="git homepage" href="http://drupal.org/"><img src="/git-logo.png" width="72" height="27" alt="git" class="logo"/></a><a href="/">projects</a> / <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git">sandbox/xandeadx/2041395.git</a> / blob
-</div>
-<form method="get" action="http://drupalcode.org/sandbox/xandeadx/2041395.git" enctype="application/x-www-form-urlencoded">
-<div class="search">
-<input name="a" type="hidden" value="search" />
-<input name="h" type="hidden" value="324eb37c8ebe5c5d4fe3e921597a1660bbf41f90" />
-<select name="st" >
-<option selected="selected" value="commit">commit</option>
-<option value="grep">grep</option>
-<option value="author">author</option>
-<option value="committer">committer</option>
-<option value="pickaxe">pickaxe</option>
-</select><sup><a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/search_help">?</a></sup> search:
-<input type="text" name="s"  />
-<span title="Extended regular expression"><label><input type="checkbox" name="sr" value="1" />re</label></span></div>
-</form>
-<div class="page_nav">
-<a href="http://drupalcode.org/sandbox/xandeadx/2041395.git">summary</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/shortlog">shortlog</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/log">log</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/commit/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90">commit</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/commitdiff/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90">commitdiff</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/tree/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90">tree</a><br/>
-<a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blame/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc">blame</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/history/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc">history</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob_plain/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc">raw</a> | <a href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/HEAD:/views_ucc_views_handler_field_user_comment_count.inc">HEAD</a><br/>
-</div>
-<div class="header">
-<a class="title" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/commit/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90">Initial commit.</a>
-</div>
-<div class="page_path"><a title="tree root" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/tree/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90">[sandbox/xandeadx/2041395.git]</a> / <a title="views_ucc_views_handler_field_user_comment_count.inc" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob_plain/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc">views_ucc_views_handler_field_user_comment_count.inc</a><br/></div>
-<div class="page_body">
-<div class="pre"><a id="l1" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l1" class="linenr">   1</a> <span class="hl sym">&lt;</span>?php</div>
-<div class="pre"><a id="l2" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l2" class="linenr">   2</a> </div>
-<div class="pre"><a id="l3" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l3" class="linenr">   3</a> <span class="hl kwa">class</span> views_ucc_views_handler_field_user_comment_count <span class="hl kwa">extends</span> views_handler_field_numeric <span class="hl sym">{</span></div>
-<div class="pre"><a id="l4" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l4" class="linenr">   4</a>   <span class="hl kwa">function</span> <span class="hl kwd">query</span><span class="hl sym">() {</span></div>
-<div class="pre"><a id="l5" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l5" class="linenr">   5</a>     <span class="hl kwc">$this</span><span class="hl sym">-&gt;</span><span class="hl kwd">ensure_my_table</span><span class="hl sym">();</span></div>
-<div class="pre"><a id="l6" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l6" class="linenr">   6</a> </div>
-<div class="pre"><a id="l7" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l7" class="linenr">   7</a>     <span class="hl kwc">$this</span><span class="hl sym">-&gt;</span>field_alias <span class="hl sym">=</span> <span class="hl kwc">$this</span><span class="hl sym">-&gt;</span>query<span class="hl sym">-&gt;</span><span class="hl kwd">add_field</span><span class="hl sym">(</span></div>
-<div class="pre"><a id="l8" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l8" class="linenr">   8</a>       NULL<span class="hl sym">,</span></div>
-<div class="pre"><a id="l9" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l9" class="linenr">   9</a>       <span class="hl str">'(SELECT COUNT(*) FROM {comment} c WHERE c.uid = users.uid AND c.status = 1)'</span><span class="hl sym">,</span></div>
-<div class="pre"><a id="l10" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l10" class="linenr">  10</a>       <span class="hl str">'user_comment_count'</span></div>
-<div class="pre"><a id="l11" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l11" class="linenr">  11</a>     <span class="hl sym">);</span></div>
-<div class="pre"><a id="l12" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l12" class="linenr">  12</a> </div>
-<div class="pre"><a id="l13" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l13" class="linenr">  13</a>     <span class="hl kwc">$this</span><span class="hl sym">-&gt;</span><span class="hl kwd">add_additional_fields</span><span class="hl sym">();</span></div>
-<div class="pre"><a id="l14" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l14" class="linenr">  14</a>   <span class="hl sym">}</span></div>
-<div class="pre"><a id="l15" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc#l15" class="linenr">  15</a> <span class="hl sym">}</span></div>
-</div><div class="page_footer">
-<div class="cachetime">Cache Last Updated: Fri Dec 13 00:40:59 2013 GMT</div>
-<!--
-	Full URL: |/sandbox/xandeadx/2041395.git/blob/324eb37c8ebe5c5d4fe3e921597a1660bbf41f90:/views_ucc_views_handler_field_user_comment_count.inc?|
-	URL Hash: |c898d825b6013221f9130bc0e41ef611|
--->
-<div class="page_footer_text">For more information about this repository, visit the project page at https://drupal.org/sandbox/xandeadx/2041395</div>
-<a class="rss_logo" title="history of views_ucc_views_handler_field_user_comment_count.inc RSS feed" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/rss?f=views_ucc_views_handler_field_user_comment_count.inc">RSS</a>
-<a class="rss_logo" title="history of views_ucc_views_handler_field_user_comment_count.inc Atom feed" href="http://drupalcode.org/sandbox/xandeadx/2041395.git/atom?f=views_ucc_views_handler_field_user_comment_count.inc">Atom</a>
-</div>
-<script type="text/javascript" src="/gitweb.js"></script>
-</body>
-</html>
+<!--?php
+$users = db_query(SELECT COUNT(cid) AS count, name, uid FROM comment GROUP BY uid, name ORDER BY count DESC LIMIT 10);
+$output = "<ul>";
+while ($user = db_fetch_object($users)) {
+  $output .= "<li>" . $user->name . $user->count </li>";
+}
+$output .= "</ul>";
+echo $output;
+?>-->
+
+<?php
+$result = db_query('SELECT COUNT(cid) AS count, name, uid FROM comment GROUP BY uid, name ORDER BY count DESC LIMIT 10');
+// Result is returned as a iterable object that returns a stdClass object on each iteration
+foreach ($result as $record) {
+  // Perform operations on $record->title, etc. here.
+  // in this example the available data would be mapped to object properties:
+  // $record->nid, $record->title, $record->created
+	$user_fields = user_load($record->uid);
+	 $firstname = $user_fields->field_first_name['und']['0']['value'];
+     $lastname = $user_fields->field_last_name['und']['0']['value'];
+	 
+echo $firstname . $lastname . $record->count;
+//print theme('user_picture', array('account' =>$user_fields));
+if($user_fields->picture){
+               print theme_image_style( array('style_name' => 'thumbnail','path' => $user_fields->uri,'attributes' => array('class' => 'avatar' )));
+                } else { 
+                 //   echo '<img src="' .$base_url . '/sites/default/files/default-user-image.jpg" />';
+				print l(theme_image_style( array('style_name' => 'thumbnail','path' => path_to_theme().'/images/default-user-image.jpg','attributes' => array('class' => 'avatar' ))), 'user/' . $record->uid, array('html' => 'true'));
+				//print l(theme('image', array('path'=>path_to_theme().'/images/default-user-image.jpg')), 'user/' . $record->uid, array('html' => 'true'));
+                }
+print $record->uid;
+
+}
+?>
+
+
+
+<?php
+$result = db_query('SELECT COUNT(cid) AS count, name, uid FROM comment GROUP BY uid, name ORDER BY count DESC LIMIT 10');
+// Result is returned as a iterable object that returns a stdClass object on each iteration
+foreach ($result as $record) {
+  // Perform operations on $record->title, etc. here.
+  // in this example the available data would be mapped to object properties:
+  // $record->nid, $record->title, $record->created
+echo $record->name;
+}
+?>
+
+
+
+
+<?php
+$result = db_query('SELECT COUNT(cid) AS count, name, uid FROM comment GROUP BY uid, name ORDER BY count DESC LIMIT 10');
+// Result is returned as a iterable object that returns a stdClass object on each iteration
+foreach ($result as $record) {
+  // Perform operations on $record->title, etc. here.
+  // in this example the available data would be mapped to object properties:
+  // $record->nid, $record->title, $record->created
+	 $user_fields = user_load($record->uid);
+	 $firstname = $user_fields->field_first_name['und']['0']['value'];
+     $lastname = $user_fields->field_last_name['und']['0']['value'];
+	 $fullname = $firstname . ' ' . $lastname;
+	 
+
+		print '<ul><li>';
+			if($user_fields->picture){
+               print theme('user_picture', array('account' =>$user_fields));
+                } else { 
+                 //   echo '<img src="' .$base_url . '/sites/default/files/default-user-image.jpg" />';
+				print l(theme('image', array('path'=>path_to_theme().'/images/default-user-image.jpg')), 'user/' . $record->uid, array('html' => 'true'));
+             }
+			print l(t($fullname), 'user/' . $record->uid) . '<br /><span>' . $record->count . ' answers</span>';
+		print '</li></ul>';
+}
+?>

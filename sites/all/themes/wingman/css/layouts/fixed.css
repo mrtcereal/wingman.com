@@ -112,9 +112,11 @@
 .sidebar-second .region-sidebar-second {
   float: left;
   width: 330px;
-  margin-left: 630px;
+  margin-left: 650px;
   margin-right: -980px;
 }
+
+
 
 /**
  * The layout when there are two sidebars.
