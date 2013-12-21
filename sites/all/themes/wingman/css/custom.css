@@ -44,7 +44,6 @@ ul.links a {
 }
 
 .edit-link {
-	float: right;
 	font-size: .8em;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -99,6 +98,19 @@ label {
 	margin: .3em 0;
 }
 
+/* Generic Side Bar block tite */
+
+.region-sidebar-second h2.block-title {
+	border-bottom: solid 1px #b4ab90;
+	font-size: .9em;
+	color: rgb( 85, 85, 85 );
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
 /* Custom ajax throbber style */
 .ajax-progress .throbber {
   /* New icon */
@@ -116,6 +128,15 @@ label {
   display: none;
 }
 
+
+/* General title style */
+h1#page-title {
+	border-bottom: solid 1px #F4F1E7;
+	font-size: 1em;
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+	text-transform: uppercase;
+}
 
 .header__logo {
 	padding-right: 1em;
@@ -407,12 +428,21 @@ left: 26px;
 	background-image: none;
 }
 
+#block-superfish-1 li.sf-depth-1 a:hover {
+	color: #ddd0a5;
+}
+
+
 
 /* Page Wrapper */
 
 #page-wrapper {
 	background: url("../images/bg/page-title-bg.png") top center repeat-x;
 	padding-bottom: 120px;
+}
+
+.front #page-wrapper {
+	padding-bottom: 0;
 }
 
 /* Slider styles */
@@ -462,7 +492,7 @@ left: 26px;
 	background: transparent;
 	font-family: 'Open Sans';
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.2;
 	text-transform: uppercase;
 	text-align: center;
@@ -513,6 +543,7 @@ a.get-started-button:hover {
 
 
 
+
 /* page - content elements */
 
 #page {
@@ -528,9 +559,13 @@ a.get-started-button:hover {
 	padding: 16px;
 }
 
+.front #page #main #content {
+	background: transparent;
+	display: none;
+}
 
 /* Newest Wingmen Block */
-#block-views-new-wingmen-block-1 h2 {
+#block-views-new-wingmen-block-1 h2, #block-views-featured-events-block-1 h2 {
 	font-weight: 300;
 	font-size: 1.2em;
 	letter-spacing: .1em;
@@ -548,6 +583,47 @@ a.get-started-button:hover {
 
 #block-views-new-wingmen-block-1 ul.pager .pager-current {
 	display: none;
+}
+
+
+/*Featured Events Block*/
+#block-views-featured-events-block-1 {
+	margin-left: 520px;
+}
+
+#block-views-featured-events-block-1 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+#block-views-featured-events-block-1 ul li {
+	font-size: 0.875em;
+	float: left;
+	line-height: 1.2;
+	width: 220px;
+	margin-right: 20px;
+}
+
+#block-views-featured-events-block-1 ul li.views-row-last {
+	margin-right: 0;
+}
+
+#block-views-featured-events-block-1 ul li img {
+	padding-bottom: .5em;
+}
+
+#block-views-featured-events-block-1 ul li a {
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: .5em;
+}
+
+#block-views-featured-events-block-1 .views-field-field-event-date, #block-views-featured-events-block-1 .views-field-city,
+#block-views-featured-events-block-1 .views-field-count {
+	font-size: .85em;
 }
 
 /* User wingmen display on profile page */
@@ -1349,9 +1425,9 @@ a.answer-this:hover {
 
 
 
-/* Most Active Answerers */
+/* Most Active Answerers & Wingmen Attending Blocks */
 
-#block-block-44 h2.block-title {
+#block-block-44 h2.block-title, #block-views-994d229dc8bbc82f12bcb7e86cdf089d h2.block-title {
 	border-bottom: solid 1px #b4ab90;
 	font-size: .9em;
 	color: rgb( 85, 85, 85 );
@@ -1362,18 +1438,20 @@ a.answer-this:hover {
 	padding-bottom: 1em;
 }
 
-#block-block-44 ul {
+#block-block-44 ul, .event-attending-block ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-#block-block-44 li {
+#block-block-44 li, .event-attending-block li {
 	font-size: .9em;
 	line-height: 1.2em;
+	height: 40px;
+	padding-bottom: 1em;
 }
 
-#block-block-44 li a {
+#block-block-44 li a, .event-attending-block li a {
 	font-weight: bold;
 }
 
@@ -1381,16 +1459,37 @@ a.answer-this:hover {
 	font-size: .8em;
 }
 
-#block-block-44 img {
+#block-block-44 img, .event-attending-block img {
 	float: left;
-	height: auto;
+	height: 40px;
 	margin-right: 10px;
 	width: 40px;
 }
 
+.event-attending-block img {
+	vertical-align: middle;
+}
 
+.event-attending-block .view-header {
+	font-size: .8em;
+	font-style: italic;
+	margin-bottom: 1em;
+}
 
 /* EVENTS */
+
+.region-highlighted #block-block-46 h2.title {
+	color: #6c6155;
+	margin: 0;
+	padding: 0;
+	font-size: 1.7em;
+	text-transform: uppercase;
+}
+
+.region-highlighted #block-block-46 h2.title span {
+	color: #555;
+	font-weight: 300;
+}
 
 .view-events .views-row {
 	border-bottom: solid 1px #F4F1E7;
@@ -1406,19 +1505,174 @@ a.answer-this:hover {
 }
 
 .view-events .views-row h2 {
-	font-size: 1em;
+	font-size: .9em;
 	line-height: 1.3;
-	margin-top: 0;
-	margin-bottom: .5em;
-	text-transform: uppercase;
+	margin: .5em 0;
 }
 
 .view-events .event-info {
 	color: #6c6155;
-	font-size: .8em;
+	font-size: .75em;
+	line-height: .9em;
 }
 
 
+.view-events .attachment {
+	float: left;
+	width: 150px;
+}
+
+.view-events .attachment ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: .8em;
+}
+
+.view-events .view-content {
+	margin-left: 175px;
+}
+
+.view-events .view-display-id-attachment_1 .view-content {
+	margin-left: 0;
+}
+
+
+/* Featured Events Block */
+.featured-events-block ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.featured-events-block ul li {
+	background: #cdc7b2;
+	color: #6c6155;
+	font-size: 14px;
+	height: 80px;
+	line-height: 1.2;
+	margin-bottom: .5em;
+	padding-right: 5px;
+}
+
+.featured-events-block ul li img {
+	float: left;
+	padding-right: 8px;
+}
+
+.featured-events-block ul li a {
+	color: #fff;
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+.featured-events-block .views-field-title {
+	padding-top: 1em;
+}
+
+/* Events node template */
+.event-image {
+	float: left;
+	width: 250px;
+	
+}
+
+.node-type-event .event-info {
+	font-size: .9em;
+	margin-left: 275px;
+}
+.field-name-field-event-date {
+	padding: .5em 0;
+	
+}
+
+p.event-address, p.event-venue {
+	margin: 0;
+	padding: 0;
+}
+
+ p.event-venue {
+	font-weight: bold;
+}
+
+.node-type-event h1#page-title {
+	border-bottom: solid 1px #F4F1E7;
+	font-weight: normal;
+	font-size: 1.4em;
+	display: none;
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+}
+
+.section-event h2.node-title {
+	border-bottom: solid 1px #F4F1E7;
+	font-weight: normal;
+	font-size: 1.3em;
+	line-height: 1.4;
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+}
+
+.field-name-field-event-category {
+	font-size: .9em;
+}
+
+
+.event-details {
+	clear: both;
+}
+
+
+
+.flag-attend-event a.flag-link-toggle {
+	border: 0;
+	background-color: #6c6155;
+	-webkit-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
+	box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
+	color: #fff;
+	font-weight: bold;
+	padding: .5em 1em;
+	margin: 1em 1em 1em 0;
+	text-transform: uppercase;
+}
+
+
+.flag-attend-event a.flag-link-toggle:hover {
+	color: #ddd0a5;
+	text-decoration: none;
+}
+
+
+.flag-attend-event .flag-message {
+	top: 3em;
+}
+
+h2.event-details-title {
+	border-bottom-color: #F4F1E7;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #555555;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 1em;
+    margin-top: 3em;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.field-name-field-event-category {
+	float: left;
+	width: 250px;
+}
+
+.field-name-field-event-description {
+	font-size: .9em;
+	margin-left: 275px;
+	text-align: left;
+}
+
+
+/* Wingmen Attending Block */
 
 
 /* Why Wingman block in footer area */
@@ -1472,6 +1726,10 @@ a.answer-this:hover {
 
 
 /* footer */
+.front #footer-wrapper {
+	position: relative;
+}
+
 #footer-wrapper {
 	background-color: #1C1C1C;
 	width: 100%;

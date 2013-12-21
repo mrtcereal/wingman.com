@@ -19,20 +19,20 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
 	 
-
+		<?php	if (($user->uid == 1) || ($uid == $user->uid) || (in_array('Editor', array_values($user->roles)))) {
+		  print '<a class="edit-link" href="?q=node/'.$node->nid.'/edit" class="edit-link">Edit this question</a>';
+		}
+		?>
+		
       <?php if ($display_submitted): ?>
-       
-         
+      
 		 <p class="submitted">
 			Asked by <?php print $name; ?> <?php print format_date($created, $type = 'time_ago', $format = '', $timezone = NULL, $langcode = NULL);
-			if (($user->uid == 1) || ($uid == $user->uid) || (in_array('Editor', array_values($user->roles)))) {
-			  print ' <a href="?q=node/'.$node->nid.'/edit" class="edit-link">Edit this question</a>';
-			}
 			?>
         </p>
       <?php endif; ?>
 	 <?php print render($content['field_question_details']); ?>
-	<?php if ($content['field_official_answer']): ?>
+	<?php if (!empty($content['field_official_answer'])): ?>
 		<div class="official-answer">
 	 		<?print render($content['field_official_answer']); ?>
 		</div>

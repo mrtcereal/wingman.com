@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>css/custom.css</string>
+	<string>css/layouts/fixed.css</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>css/custom.css</string>
 			<key>lastUsed</key>
-			<date>2013-12-04T05:31:59Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2013-12-21T01:20:15Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>css/layouts/fixed.css</string>
 			<key>lastUsed</key>
-			<date>2013-11-19T23:50:16Z</date>
+			<date>2013-12-21T01:20:15Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -45,20 +45,6 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>css/custom.css</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>1420</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>1387</integer>
-		</dict>
 		<key>css/layouts/fixed.css</key>
 		<dict>
 			<key>caret</key>
@@ -92,11 +78,10 @@
 	<array>
 		<string>templates/page.tpl.php</string>
 		<string>css/layouts/fixed.css</string>
-		<string>css/custom.css</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{316, 27}, {764, 851}}</string>
+	<string>{{1640, 567}, {764, 851}}</string>
 </dict>
 </plist>
