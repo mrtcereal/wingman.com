@@ -3,32 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>css/layouts/fixed.css</string>
+	<string>css/custom.css</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>css/custom.css</string>
 			<key>lastUsed</key>
-			<date>2013-12-21T01:20:15Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>css/layouts/fixed.css</string>
-			<key>lastUsed</key>
-			<date>2013-12-21T01:20:15Z</date>
+			<date>2013-12-31T23:58:03Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>css/layouts/fixed.css</string>
+			<key>lastUsed</key>
+			<date>2013-12-24T19:08:47Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>templates/page.tpl.php</string>
 			<key>lastUsed</key>
-			<date>2013-12-04T05:31:59Z</date>
+			<date>2013-12-31T23:58:03Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>wingman.info</string>
+			<key>lastUsed</key>
+			<date>2013-12-31T19:40:36Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -45,6 +47,20 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
+		<key>css/custom.css</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>16</integer>
+				<key>line</key>
+				<integer>35</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>css/layouts/fixed.css</key>
 		<dict>
 			<key>caret</key>
@@ -64,24 +80,40 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>6</integer>
+				<integer>21</integer>
 				<key>line</key>
-				<integer>108</integer>
+				<integer>79</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>64</integer>
+			<integer>31</integer>
+		</dict>
+		<key>wingman.info</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>12</integer>
+				<key>line</key>
+				<integer>95</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>57</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>templates/page.tpl.php</string>
+		<string>wingman.info</string>
 		<string>css/layouts/fixed.css</string>
+		<string>css/custom.css</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1640, 567}, {764, 851}}</string>
+	<string>{{1231, 720}, {1000, 698}}</string>
 </dict>
 </plist>

@@ -22,6 +22,22 @@ body {
 	position:relative;
 }
 
+.region-left-content {
+	float: left;
+	width: 150px;
+}
+
+.region-left-content h2.block-title {
+	font-size: .8em;
+}
+
+.region-left-content ul {
+	list-style-type: none;
+	font-size: .8em;
+	margin-top: 0;
+	padding-left: 0;
+	
+}
 
 /* links */
 
@@ -745,33 +761,34 @@ ul.user-profile-menu li a.active:hover {
 }
 
 
-.view-content ul.user-list-photos {
+.view-content ul.user-list-photos, .view-id-all_wingmen ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
 
-.view-content ul.user-list-photos li {
+.view-content ul.user-list-photos li, .view-id-all_wingmen ul li {
 	line-height: 1.4;
 	float: left;
 	margin-right: 1em;
+	padding-bottom: 1.5em;
 	text-align: center;
 	width: 100px;
 }
 
-.view-content ul.user-list-photos li img {
+.view-content ul.user-list-photos li img, .view-id-all_wingmen ul li img {
 	height: 100px;
 	width: 100px;
 }
 
-.view-content ul.user-list-photos li .views-field-field-last-name a {
+.view-content ul.user-list-photos li .views-field-field-last-name a, .view-id-all_wingmen ul li a {
 	font-size: .875em;
 	font-weight: bold;
 }
 
 
-.view-content ul.user-list-photos li .views-field-city, .view-content ul.user-list-photos li .views-field-php, .view-content ul.user-list-photos li .views-field-province, .view-content ul.user-list-photos li.flag-wrapper {
+.view-content ul.user-list-photos li .views-field-city, .view-content ul.user-list-photos li .views-field-php, .view-content ul.user-list-photos li .views-field-province, .view-content ul.user-list-photos li.flag-wrapper, .view-id-all_wingmen .views-field-city, .view-id-all_wingmen .views-field-province {
 	font-size: .7em;
 }
 
@@ -804,6 +821,10 @@ ul.user-profile-menu li a.active:hover {
 	text-transform: uppercase;
 }
 
+
+
+/* Members Lists */ 
+.view-id-all_wingmen {}
 
 
 /* User edit forms */
@@ -1536,6 +1557,21 @@ a.answer-this:hover {
 	margin-left: 0;
 }
 
+/* Event Categories Block */
+.event-categories {
+	float: left;
+	width: 150px;
+}
+
+.event-categories .view-content {
+	margin-left: 0;
+}
+
+.event-categories ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: .8em;
+}
 
 /* Featured Events Block */
 .featured-events-block ul {
