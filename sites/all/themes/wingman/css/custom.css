@@ -39,6 +39,10 @@ body {
 	
 }
 
+.region-left-content input {
+	max-width: 150px;
+}
+
 /* links */
 
 a {
@@ -1572,6 +1576,17 @@ a.answer-this:hover {
 	padding: 0;
 	font-size: .8em;
 }
+
+/* Events distance sorter block */
+.events-distance input[type='text'] {
+	font-size: .7em;
+}
+
+.events-distance label {
+	font-size: .8em;
+	font-weight: normal;
+}
+
 
 /* Featured Events Block */
 .featured-events-block ul {

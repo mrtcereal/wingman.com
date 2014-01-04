@@ -153,4 +153,25 @@ function wingman_form_comment_form_alter(&$form, &$form_state, $form_id) {
   }
 }
 
+function wingman_form_alter(&$form, $form_state, $form_id) {
+	if($form_id == 'views_exposed_form_events_page') {
+			if (isset($form['distance_1']['search_distance'])) {
+			$form['distance_1']['search_distance'] = array(
+			      '#type' => 'select',
+			      '#title' => t('Distance'),
+			      '#options' => array(
+			         '' => t('Distance'),
+			        '10' => t('10 Kilometer'),
+			        '25' => t('25 Kilometer'),
+			        '50' => t('50 Kilometer'),
+			        '100' => t('100 Kilometer'),
+			        '250' => t('250 Kilometer'),
+			        '3000' => t('All'),
+			      ),
+			      '#weight' => 1,
+			    );
+			}
+		  }
+}
+
 
