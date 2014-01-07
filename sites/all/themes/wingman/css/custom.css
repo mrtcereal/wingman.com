@@ -1578,8 +1578,13 @@ a.answer-this:hover {
 }
 
 /* Events distance sorter block */
+.events-distance .views-exposed-form .views-exposed-widget {
+	padding-top: 0;
+}
+
 .events-distance input[type='text'] {
 	font-size: .7em;
+	width: 100px;
 }
 
 .events-distance label {
@@ -1587,6 +1592,28 @@ a.answer-this:hover {
 	font-weight: normal;
 }
 
+.events-distance label[for='edit-distance-1'], .events-distance label[for='edit-distance-1-search-distance'] {
+	display: none;
+}
+
+.events-distance label[for='edit-distance-1-postal-code'] {
+	content: 'Zip code';
+}
+
+
+.events-distance .form-item-distance-1-search-units {
+	display: none;
+}
+
+.events-distance select {
+	font-size: .8em;
+	margin-top: 1em;
+}
+
+.events-distance .views-exposed-widget input[type="submit"] {
+	font-size: .8em;
+	margin-top: .5em;
+}
 
 /* Featured Events Block */
 .featured-events-block ul {

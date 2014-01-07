@@ -1,0 +1,4 @@
+name = Wingman Events Locator
+description = Alters form for Events distance locator.
+core = 7.x
+package = Custom Modules
