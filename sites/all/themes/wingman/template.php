@@ -154,4 +154,27 @@ function wingman_form_comment_form_alter(&$form, &$form_state, $form_id) {
 }
 
 
+/**
+ * Implements hook_form_alter().
+ */
+
+function wingman_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'user_register_form' || $form_id == 'user_profile_form') {
+    // Modify Labels for Friend Notification Settings
+	if (isset($form['flag_friend']['#title'])) {
+	$form['flag_friend']['#title'] = t('Wingman notifications settings');
+	}
+	
+	if (isset($form['flag_friend']['flag_friend_request_notify'])) {
+	$form['flag_friend']['flag_friend_request_notify']['#title'] = t('Receive email notifications for Wingman requests ');
+	$form['flag_friend']['flag_friend_request_notify']['#description'] = t('Would you like to be notified when someone wants to be your Wingman? ');
+	}
+	
+	if (isset($form['flag_friend']['flag_friend_approved_notify'])) {
+	$form['flag_friend']['flag_friend_approved_notify']['#title'] = t('Receive email notifications for Wingman approvals');
+	$form['flag_friend']['flag_friend_approved_notify']['#description'] = t('Would you like to be notified when someone approved your Wingman request?');
+	}
+  }
+}
+
 
