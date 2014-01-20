@@ -30,4 +30,26 @@ function wm_events_distance_locator_form_alter(&$form, &$form_state, $form_id) {
 			}
 			
 	}
+	
+
+/*	if($form['#id'] == 'views-exposed-form-all-wingmen-page') {
+			if (isset($form['distance_1']['search_distance'])) {
+			$form['distance_1']['search_distance'] = array(
+			      '#type' => 'select',
+			      '#title' => t('Distance'),
+			      '#options' => array(
+			        '5' => t('5 Miles'),
+			        '25' => t('25 Miles'),
+			        '50' => t('50 Miles'),
+			        '3000' => t('All'),
+			      ),
+			      '#weight' => 9,
+			    );
+			}
+			if (isset($form['distance_1']['postal_code'])) {
+				$form['distance_1']['postal_code']['#title'] = t('Zip Code');
+			}
+			
+	}*/
+	
 }

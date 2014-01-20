@@ -118,6 +118,58 @@ label {
 	margin: .3em 0;
 }
 
+
+/* views item separator */ 
+span.bull {
+	font-size: .7em;
+}
+
+
+/* pager styles */
+ul.pager {
+	padding-top: 1em !important;
+}
+
+
+
+
+ul.pager li.pager-item, ul.pager li.pager-next, ul.pager li.pager-last, li.pager-first, li.pager-previous  {
+	padding: 0;
+	
+}
+
+li.pager-item a, li.pager-next a, li.pager-last a, li.pager-current, li.pager-first a, li.pager-previous a {
+    display: inline-block;
+    padding: 0px 9px;
+    margin-right: 4px;
+    border-radius: 3px;
+    border: solid 1px #c0c0c0;
+    background: #e9e9e9;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1);
+    font-size: .875em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #717171;
+    text-shadow: 0px 1px 0px rgba(255,255,255, 1);
+}
+
+li.pager-item a:hover, li.pager-next a:hover, li.pager-last a:hover, li.pager-first a:hover, li.pager-previous a:hover {
+    background: #fefefe;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
+    background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE, #f0f0f0);
+}
+
+li.pager-current  {
+    border: none;
+    background: #6C6155;
+    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+    color: #f0f0f0;
+	padding: 0 9px !important;
+    text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+}
+
+
+
 /* Generic Side Bar block tite */
 
 .region-sidebar-second h2.block-title {
@@ -681,13 +733,13 @@ a.get-started-button:hover {
 }
 
 
-#block-views-wingman-user-friends-block-2 p.add-wingman-button span a.flag-link-confirm {
+#block-views-wingman-user-friends-block-2 p.add-wingman-button span a.flag-link-toggle {
 	-webkit-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
 	box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
 }
 
 
-#block-views-wingman-user-friends-block-2 p.add-wingman-button a.flag-link-confirm {
+#block-views-wingman-user-friends-block-2 p.add-wingman-button a.flag-link-toggle {
 	background-color: #6c6155;
 	-webkit-box-shadow:  0px 2px 2px 0px #665b50;
 	box-shadow:  0px 2px 2px 0px #665b50;
@@ -697,13 +749,18 @@ a.get-started-button:hover {
 	text-transform: uppercase;
 }
 
-#block-views-wingman-user-friends-block-2 p.add-wingman-button a.flag-link-confirm:hover {
+#block-views-wingman-user-friends-block-2 p.add-wingman-button a.flag-link-toggle:hover {
 	color: #ddd0a5;
 	text-decoration: none;
 }
 
 #block-views-wingman-user-friends-block-2 .views-field-privatemsg-link {
 	margin-left: 654px;
+}
+
+#block-views-wingman-user-friends-block-2 .views-field-privatemsg-link a {
+	background: url('../images/message-icon.png') center left no-repeat;
+	padding-left: 35px;
 }
 
 
@@ -765,14 +822,14 @@ ul.user-profile-menu li a.active:hover {
 }
 
 
-.view-content ul.user-list-photos, .view-id-all_wingmen ul {
+.view-content ul.user-list-photos, .view-id-all_wingmen .view-content ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
 
-.view-content ul.user-list-photos li, .view-id-all_wingmen ul li {
+.view-content ul.user-list-photos li  {
 	line-height: 1.4;
 	float: left;
 	margin-right: 1em;
@@ -780,6 +837,8 @@ ul.user-profile-menu li a.active:hover {
 	text-align: center;
 	width: 100px;
 }
+
+
 
 .view-content ul.user-list-photos li img, .view-id-all_wingmen ul li img {
 	height: 100px;
@@ -792,8 +851,54 @@ ul.user-profile-menu li a.active:hover {
 }
 
 
-.view-content ul.user-list-photos li .views-field-city, .view-content ul.user-list-photos li .views-field-php, .view-content ul.user-list-photos li .views-field-province, .view-content ul.user-list-photos li.flag-wrapper, .view-id-all_wingmen .views-field-city, .view-id-all_wingmen .views-field-province {
+.view-content ul.user-list-photos li .views-field-city, .view-content ul.user-list-photos li .views-field-php, .view-content ul.user-list-photos li .views-field-province, .view-content ul.user-list-photos li.flag-wrapper, .view-id-all_wingmen .views-field-city, .view-id-all_wingmen .views-field-province, .view-id-all_wingmen .views-field-php, .view-id-all_wingmen .views-field-field-interests  {
 	font-size: .7em;
+}
+
+
+/*members views*/
+.view-id-all_wingmen ul li.views-row {
+	border-bottom: solid 1px #F4F1E7;
+	clear: both;
+	height: 100px;
+	line-height: 1.15em;
+	margin-top: 1em;
+	padding-bottom: 1em;
+}
+
+.view-id-all_wingmen ul li img {
+	float: left;
+	margin-right: 1em;
+}
+
+.view-id-all_wingmen p.views-field-field-interests {
+	margin: 0;
+}
+
+.view-id-all_wingmen p.add-wingman-button {
+	margin: .5em 0 0 0;
+}
+
+.view-id-all_wingmen p.add-wingman-button span a.flag-link-toggle {
+	-webkit-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
+	box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
+	font-size: .7em;
+}
+
+
+.view-id-all_wingmen p.add-wingman-button a.flag-link-toggle {
+	background-color: #6c6155;
+	-webkit-box-shadow:  0px 2px 2px 0px #665b50;
+	box-shadow:  0px 2px 2px 0px #665b50;
+	color: #fff;
+	font-weight: bold;
+	padding: .5em 1em;
+	text-transform: uppercase;
+}
+
+.view-id-all_wingmen p.add-wingman-button a.flag-link-toggle:hover {
+	color: #ddd0a5;
+	text-decoration: none;
 }
 
 
@@ -1596,9 +1701,6 @@ a.answer-this:hover {
 	display: none;
 }
 
-.events-distance label[for='edit-distance-1-postal-code'] {
-	content: 'Zip code';
-}
 
 
 .events-distance .form-item-distance-1-search-units {
@@ -1771,6 +1873,15 @@ h2.event-details-title {
 
 
 
+/* Members */
+
+#views-exposed-form-all-wingmen-page label[for='edit-distance-1'], #views-exposed-form-all-wingmen-page label[for='edit-distance-1-search-distance'], #views-exposed-form-all-wingmen-page .form-item-distance-1-search-units {
+	display: none;
+}
+
+#views-exposed-form-all-wingmen-page select {
+	font-size: 11px;
+}
 
 
 #footer .why-wingman h2.block-title {
