@@ -1874,15 +1874,84 @@ h2.event-details-title {
 
 
 /* Members */
+#block-block-49 {
+	
+}
 
-#views-exposed-form-all-wingmen-page label[for='edit-distance-1'], #views-exposed-form-all-wingmen-page label[for='edit-distance-1-search-distance'], #views-exposed-form-all-wingmen-page .form-item-distance-1-search-units {
+.region-highlighted #block-block-49 h2.title {
+	color: #6c6155;
+	margin: 0;
+	padding: 0;
+	font-size: 1.7em;
+	text-transform: uppercase;
+}
+
+.region-highlighted #block-block-49 h2.title span {
+	color: #555;
+	font-weight: 300;
+}
+
+.region-highlighted #block-block-49 p {
+	margin-top: 0;
+}
+
+#views-exposed-form-all-wingmen-page label {
+	font-size: .9em;
+}
+
+#views-exposed-form-all-wingmen-page label[for='edit-distance-1'], #views-exposed-form-all-wingmen-page .form-item-distance-1-search-units {
 	display: none;
+}
+
+
+#views-exposed-form-all-wingmen-page label[for='edit-distance-1-search-distance'] {
+	font-size: .9em;
+	text-indent: -999999px;
 }
 
 #views-exposed-form-all-wingmen-page select {
 	font-size: 11px;
 }
 
+#views-exposed-form-all-wingmen-page #edit-distance-1-wrapper {
+	width: 250px;
+}
+
+#views-exposed-form-all-wingmen-page input#edit-distance-1-postal-code {
+	width: 150px;
+	font-size: 11px;
+	
+}
+
+#views-exposed-form-all-wingmen-page .form-item-distance-1-postal-code {
+	float: left;
+	width: 150px;
+	margin-right: .5em;
+}
+
+.form-item-distance-1-search-distance {}
+
+#views-exposed-form-all-wingmen-page .views-submit-button {
+	clear: both;
+	padding: 0;
+}
+
+#views-exposed-form-all-wingmen-page .views-submit-button input {
+	font-size: .9em;
+	margin-top: 1em;
+	
+}
+
+#views-exposed-form-all-wingmen-page input#edit-reset {
+	background: transparent;
+	color: #006699;
+	font-weight: normal;
+	text-transform: lowercase;
+	box-shadow: none;
+	font-size: .9em;
+	padding: 0;
+	margin-top: 1em;
+}
 
 #footer .why-wingman h2.block-title {
 	color: rgb( 221, 208, 165 );

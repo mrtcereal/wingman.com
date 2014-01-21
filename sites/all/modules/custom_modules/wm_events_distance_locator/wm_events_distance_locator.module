@@ -32,7 +32,7 @@ function wm_events_distance_locator_form_alter(&$form, &$form_state, $form_id) {
 	}
 	
 
-/*	if($form['#id'] == 'views-exposed-form-all-wingmen-page') {
+	if($form['#id'] == 'views-exposed-form-all-wingmen-page') {
 			if (isset($form['distance_1']['search_distance'])) {
 			$form['distance_1']['search_distance'] = array(
 			      '#type' => 'select',
@@ -50,6 +50,6 @@ function wm_events_distance_locator_form_alter(&$form, &$form_state, $form_id) {
 				$form['distance_1']['postal_code']['#title'] = t('Zip Code');
 			}
 			
-	}*/
+	}
 	
 }
