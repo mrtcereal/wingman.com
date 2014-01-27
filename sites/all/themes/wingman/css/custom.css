@@ -124,6 +124,50 @@ span.bull {
 	font-size: .7em;
 }
 
+/* tabs */
+.tabs-primary, .tabs-secondary {
+	background-image: none;
+}
+
+.is-active.tabs-primary__tab {
+	border: 0;
+	background-image: none;
+}
+
+.is-active.tabs-primary__tab a {
+	border: 0;
+	background-image: none;
+	background-color: #CDC7B2;
+	border-radius: 0px;
+	color: #fff;
+	font-size: .9em;
+	font-weight: bold;
+	padding: .5em 1em;
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.tabs-primary__tab {
+	
+	border: 0;
+	
+
+}
+
+.tabs-primary__tab a {
+	border-radius: 0;
+	color: #999;
+	font-size: .9em;
+	font-weight: bold;
+	padding: .5em 1em;
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.tabs-primary__tab a:hover {
+	text-decoration: none;
+}
+
 
 /* pager styles */
 ul.pager {
@@ -168,7 +212,40 @@ li.pager-current  {
     text-shadow: 0px 0px 3px rgba(0,0,0, .5);
 }
 
+/* User register page */
+.page-user-register form {
+	
+}
 
+.page-user-register fieldset {
+	border: 0;
+	padding: 0;
+}
+
+.page-user-register fieldset legend {
+	display: none;
+}
+
+.page-user-register .form-item label {
+    display: block;
+    float: left;
+    padding-right: 10px;
+    text-align: left;
+    width: 10em;
+}
+
+.page-user-register .form-item .description {
+    margin-left: 170px;
+	width: 500px;
+}
+
+.page-user-register .form-item input[type="text"] {
+	width: 500px;
+}
+
+.page-user-register input[type="submit"] {
+	margin-left: 170px;
+}
 
 /* Generic Side Bar block tite */
 
@@ -586,11 +663,20 @@ p.get-started {
 a.get-started-button {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-    background-image: -moz-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
+   /* background-image: -moz-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
-    box-shadow: 0.5px 0.866px 0px 0px rgb( 255, 255, 255 );
-	color: #000;
+    box-shadow: 0.5px 0.866px 0px 0px rgb( 255, 255, 255 );*/
+	color: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: #a92f2f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a92f2f 0%, #ce5454 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a92f2f), color-stop(100%,#ce5454)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a92f2f 0%,#ce5454 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a92f2f 0%,#ce5454 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a92f2f 0%,#ce5454 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a92f2f 0%,#ce5454 100%); /* W3C */
 	font-size: 17px;
 	font-family: "Open Sans";
 	font-weight: bold;
@@ -599,17 +685,21 @@ a.get-started-button {
 	margin: 25px 0px;
 	padding: 5px 10px;
 	text-align: center;
-	text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+	text-shadow: 0.5px 1px 0px rgba( 0, 0, 0, .5);
 	text-transform: uppercase;
 }
 
 
 a.get-started-button:hover {
 	color: #fff;
-	background-image: -moz-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
-	text-shadow: 1px 1px 1px rgba( 0, 0, 0, .4 );
+	background: #a92f2f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ce5454 0%, #a92f2f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ce5454), color-stop(100%,#a92f2f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ce5454 0%,#a92f2f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ce5454 0%,#a92f2f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ce5454 0%,#a92f2f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ce5454 0%,#a92f2f 100%); /* W3C */
+	text-shadow: 1px 1px 3px rgba( 0, 0, 0, .8 );
 	text-decoration: none;
 }
 
@@ -763,6 +853,28 @@ a.get-started-button:hover {
 	padding-left: 35px;
 }
 
+/* Status styles */
+
+/*hide status under status form*/
+#block-statuses-statuses .view-statuses-stream {
+	display: none;
+}
+
+.statuses-update .button, .statuses-update .button:hover {
+	background-color: #6C6155;
+}
+
+#block-statuses-statuses #statuses-replace {
+	width: 636px;
+	padding-bottom: 3em;
+}
+
+.statuses-textarea-wrapper {
+	margin-bottom: .5em;
+	box-shadow: none;
+	padding: 0;
+}
+
 
 
 /* Profile menu block */
@@ -845,7 +957,7 @@ ul.user-profile-menu li a.active:hover {
 	width: 100px;
 }
 
-.view-content ul.user-list-photos li .views-field-field-last-name a, .view-id-all_wingmen ul li a {
+.view-content ul.user-list-photos li .views-field-field-last-name a, .view-id-all_wingmen ul li a,  ul.user-list-photos li a {
 	font-size: .875em;
 	font-weight: bold;
 }
@@ -931,6 +1043,25 @@ ul.user-profile-menu li a.active:hover {
 }
 
 
+/*recommended wingman block*/
+#block-views-similar-users-block-1 ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#block-views-similar-users-block-1 ul li {
+	padding-right: 10px;
+	float: left;
+	font-size: 0.65em;
+	font-weight: bold;
+	text-align: center;
+	width: 75px;
+}
+
+#block-views-similar-users-block-1 ul li.views-row-last {
+	padding-right: 0px;
+}
 
 /* Members Lists */ 
 .view-id-all_wingmen {}
@@ -1627,11 +1758,17 @@ a.answer-this:hover {
 	padding: 1em 0;
 }
 
-.view-events .views-field-field-event-image img {
+.view-events .views-field-field-event-image, .view-events .views-field-field-event-logo {
 	float: left;
+	width: 100px;
+	min-height: 100px;
 	margin-right: 1em;
-	height: 100px;
 	margin-bottom: 1em;
+}
+
+.view-events .views-field-field-event-image img, .view-events .views-field-field-event-logo img {
+	height: auto;
+	width: 100px;
 }
 
 .view-events .views-row h2 {

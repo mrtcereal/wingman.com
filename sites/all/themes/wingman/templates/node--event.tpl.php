@@ -33,9 +33,13 @@
 	<?php endif; ?>
 	
 	
-	
 	<div class="event-image">
-		<?php print render($content['field_event_image']); ?>
+		<?php if(isset($node->field_event_logo['und'][0]['value'])) {
+			print "<img src='" . $node->field_event_logo['und'][0]['value'] ."'/ >"; 
+			} else {
+				print render($content['field_event_image']);
+			}?>
+	
 	</div>
 	
 	
@@ -52,11 +56,14 @@
 		?>
 		<?php 	
 			// Location Details
-				$venue = $node->field_event_location['und'][0]['name'];
-				$street = $node->field_event_location['und'][0]['street']; 
-				$city = $node->field_event_location['und'][0]['city'];
-				$state = $node->field_event_location['und'][0]['province'];
-				$zipcode = $node->field_event_location['und'][0]['postal_code'];
+				if (isset($node->field_event_location['und'][0]['name'])) {$venue = $node->field_event_location['und'][0]['name'];}
+				if (isset($node->field_event_location['und'][0]['street'])) {$street = $node->field_event_location['und'][0]['street'];}
+				if (isset($node->field_event_location['und'][0]['city'])) {$city = $node->field_event_location['und'][0]['city'];}
+				if (isset($node->field_event_location['und'][0]['province'])) {$state = $node->field_event_location['und'][0]['province'];}
+				if (isset($node->field_event_location['und'][0]['postal_code'])) {$zipcode = $node->field_event_location['und'][0]['postal_code']; }
+				
+				
+				
 		?>
 		
 		<?php print render($content['field_event_date']); ?>
