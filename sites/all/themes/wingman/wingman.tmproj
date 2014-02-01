@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>css/custom.css</string>
+	<string>template.php</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>css/custom.css</string>
 			<key>lastUsed</key>
-			<date>2014-01-04T23:51:55Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2014-01-03T23:14:31Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -40,7 +38,9 @@
 			<key>filename</key>
 			<string>template.php</string>
 			<key>lastUsed</key>
-			<date>2014-01-04T23:51:55Z</date>
+			<date>2014-01-03T23:14:31Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -52,14 +52,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>15</integer>
+				<integer>20</integer>
 				<key>line</key>
-				<integer>1581</integer>
+				<integer>1586</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>1570</integer>
+			<integer>1566</integer>
 		</dict>
 		<key>css/layouts/fixed.css</key>
 		<dict>
@@ -82,12 +82,12 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>155</integer>
+				<integer>8</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>121</integer>
+			<integer>0</integer>
 		</dict>
 		<key>templates/page.tpl.php</key>
 		<dict>
@@ -129,6 +129,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1205, 467}, {1000, 698}}</string>
+	<string>{{440, 500}, {1000, 378}}</string>
 </dict>
 </plist>
