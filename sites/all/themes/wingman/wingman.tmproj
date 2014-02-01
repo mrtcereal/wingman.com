@@ -10,13 +10,19 @@
 			<key>filename</key>
 			<string>css/custom.css</string>
 			<key>lastUsed</key>
+<<<<<<< HEAD
 			<date>2014-01-03T23:14:31Z</date>
+=======
+			<date>2014-01-25T19:14:43Z</date>
+			<key>selected</key>
+			<true/>
+>>>>>>> 3c49e06ead3089c94c937c9498e42ff5f4f83fb6
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>css/layouts/fixed.css</string>
 			<key>lastUsed</key>
-			<date>2013-12-24T19:08:47Z</date>
+			<date>2014-01-09T18:51:27Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -52,14 +58,24 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
+<<<<<<< HEAD
 				<integer>20</integer>
 				<key>line</key>
 				<integer>1586</integer>
+=======
+				<integer>0</integer>
+				<key>line</key>
+				<integer>1790</integer>
+>>>>>>> 3c49e06ead3089c94c937c9498e42ff5f4f83fb6
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
+<<<<<<< HEAD
 			<integer>1566</integer>
+=======
+			<integer>1752</integer>
+>>>>>>> 3c49e06ead3089c94c937c9498e42ff5f4f83fb6
 		</dict>
 		<key>css/layouts/fixed.css</key>
 		<dict>
@@ -129,6 +145,10 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
+<<<<<<< HEAD
 	<string>{{440, 500}, {1000, 378}}</string>
+=======
+	<string>{{197, 285}, {1034, 941}}</string>
+>>>>>>> 3c49e06ead3089c94c937c9498e42ff5f4f83fb6
 </dict>
 </plist>
