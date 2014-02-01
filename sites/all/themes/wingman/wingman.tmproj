@@ -3,16 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>css/custom.css</string>
+	<string>template.php</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>css/custom.css</string>
 			<key>lastUsed</key>
+<<<<<<< HEAD
 			<date>2014-02-01T00:32:40Z</date>
+=======
+<<<<<<< HEAD
+			<date>2014-01-03T23:14:31Z</date>
+=======
+			<date>2014-01-25T19:14:43Z</date>
+>>>>>>> 27a1479a7b99a0ca7d8eba542e085c2f469a7409
 			<key>selected</key>
 			<true/>
+>>>>>>> 3c49e06ead3089c94c937c9498e42ff5f4f83fb6
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -40,7 +48,9 @@
 			<key>filename</key>
 			<string>template.php</string>
 			<key>lastUsed</key>
-			<date>2014-01-04T23:51:55Z</date>
+			<date>2014-01-03T23:14:31Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -52,14 +62,34 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
+<<<<<<< HEAD
 				<integer>20</integer>
 				<key>line</key>
 				<integer>660</integer>
+=======
+<<<<<<< HEAD
+				<integer>20</integer>
+				<key>line</key>
+				<integer>1586</integer>
+=======
+				<integer>0</integer>
+				<key>line</key>
+				<integer>1790</integer>
+>>>>>>> 3c49e06ead3089c94c937c9498e42ff5f4f83fb6
+>>>>>>> 27a1479a7b99a0ca7d8eba542e085c2f469a7409
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
+<<<<<<< HEAD
 			<integer>625</integer>
+=======
+<<<<<<< HEAD
+			<integer>1566</integer>
+=======
+			<integer>1752</integer>
+>>>>>>> 3c49e06ead3089c94c937c9498e42ff5f4f83fb6
+>>>>>>> 27a1479a7b99a0ca7d8eba542e085c2f469a7409
 		</dict>
 		<key>css/layouts/fixed.css</key>
 		<dict>
@@ -82,12 +112,12 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>155</integer>
+				<integer>8</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>121</integer>
+			<integer>0</integer>
 		</dict>
 		<key>templates/page.tpl.php</key>
 		<dict>
@@ -129,6 +159,14 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
+<<<<<<< HEAD
 	<string>{{1092, 264}, {1034, 941}}</string>
+=======
+<<<<<<< HEAD
+	<string>{{440, 500}, {1000, 378}}</string>
+=======
+	<string>{{197, 285}, {1034, 941}}</string>
+>>>>>>> 3c49e06ead3089c94c937c9498e42ff5f4f83fb6
+>>>>>>> 27a1479a7b99a0ca7d8eba542e085c2f469a7409
 </dict>
 </plist>
