@@ -1,0 +1,109 @@
+<?php 
+
+/**
+* @file
+* Displays block of Top Answerers
+*/
+
+
+
+function get_top_answerers() {
+	//$result = db_query('SELECT COUNT(cid) AS count, name, uid FROM comment GROUP BY uid, name ORDER BY count DESC LIMIT 10');
+	$query = db_query("SELECT c.name, c.uid, COUNT(c.cid) as count from COMMENT c, NODE n where c.nid = n.nid and type = 'question_and_answer' and c.uid not in (1,0) group by c.name, c.UID order by count desc LIMIT 10");
+	return $query
+}
+
+/**
+ * Implements hook_block_info().
+ *
+ * This function tells drupal about our block.
+ *
+ * For more information on this function, see:
+ * http://api.drupal.org/api/drupal/modules block block.api.php/function/hook_block_info/7
+ */
+function wm_top_answerers_block_info() {
+        // Create an array that will hold our blocks
+        $blocks = array();
+ 
+        // Create a key in our $blocks array that
+        // defines our block.  
+        $blocks['wm_top_answerers_form'] = array(
+                // 'info' is what you will see when viewing the blocks admin page.
+                // Note that we use the t() (translate) function which lets drupal
+                // translate any text passed in if needed.
+                'info' => t('Top Answerers'),
+                // 'cache' how this block will be cached
+                'cache' => DRUPAL_CACHE_GLOBAL,
+        );
+ 
+        // Note, if you wanted to define multiple blocks, you 
+        // could simply define more blocks just like above.
+ 
+        // Finally, we return the $blocks array.
+        return $blocks;
+}
+ 
+/**
+ * Implements hook_block_view().
+ * 
+ * This function tells drupal how to define our block when viewed.
+ *
+ * For more information on this function, see:
+ * http://api.drupal.org/api/drupal/modules block block.api.php/function/hook_block_view/7
+ */
+function wm_ask_question_block_view($delta = '') {
+        // Create an array that will be returned as our block
+        $block = array();
+
+        // Since hook_block_view is called for every block,
+        // Drupal passes in $delta (the key of the blocks defined
+        // in hook_block_info.  In our case, we're checking for
+        // $delta to be 'wm_ask_question_form'.
+        switch($delta) {
+                case 'wm_top_answerers':
+                        // Since this $delta matches our case, we'll define
+                        // the subject and contents.
+
+                        // 'subject' can be blank ('') or anything you wish to define.
+                        $block['subject'] = t('Top Answerers');
+
+                        // 'content' are just that, the contents of the block.
+                        // In our case, we will be showing a form.
+                        // We use drupal_get_form() to return a drupal-built form.
+                        // Note that the parameter passed to drupal_get_form is the name
+                        // of the function we will build below to define our form.
+                        // This can be any function name we define below.
+                        $block['content'] = drupal_get_form('wm_ask_question_form');
+
+						$result = get_top_answerers();
+					 	
+						// Array to contain items for the block to render.
+					    $items = array();
+						
+						// Result is returned as a iterable object that returns a stdClass object on each iteration
+						foreach ($result as $record) {
+						  // Perform operations on $record->title, etc. here.
+						  // in this example the available data would be mapped to object properties:
+						  // $record->uid, $record->name, $record->count
+							 $user_fields = user_load($record->uid);
+							 $firstname = $user_fields->field_first_name['und']['0']['value'];
+						     $lastname = $user_fields->field_last_name['und']['0']['value'];
+							 $fullname = $firstname . ' ' . $lastname;
+
+								print '<ul><li>';
+									if($user_fields->picture){
+						               print theme('user_picture', array('account' =>$user_fields));
+						                } else { 
+						                 //   echo '<img src="' .$base_url . '/sites/default/files/default-user-image.jpg" />';
+										print l(theme('image', array('path'=>path_to_theme().'/images/default-user-image.jpg')), 'user/' . $record->uid, array('html' => 'true'));
+						             }
+									print l(t($fullname), 'user/' . $record->uid) . '<br /><span>' . $record->count . ' answers</span>';
+								print '</li></ul>';
+						}
+						
+                break;
+        }
+
+        // Finally, we return the $block array.
+        return $block;
+}
