@@ -145,12 +145,31 @@ return array(
 
 
 
-
+/*Modify comment "logged in as" */
 function wingman_form_comment_form_alter(&$form, &$form_state, $form_id) {
   $label = t('Logged in as');
   if (isset($form['author']['_author'])) {
     $form['author']['_author']['#title'] = $label;
   }
+}
+
+/*make user-register.tpl available */
+function wingman_theme(&$existing, $type, $theme, $path){
+  $hooks = array();
+   // Make user-register.tpl.php available
+  $hooks['user_register_form'] = array (
+     'render element' => 'form',
+     'path' => drupal_get_path('theme','wingman'),
+     'template' => 'user-register',
+     'preprocess functions' => array('wingman_preprocess_user_register_form'),
+  );
+  return $hooks;
+}
+function wingman_preprocess_user_register_form(&$vars) {
+  $args = func_get_args();
+  array_shift($args);
+  $form_state['build_info']['args'] = $args;
+  $vars['form'] = drupal_build_form('user_register_form', $form_state['build_info']['args']);
 }
 
 

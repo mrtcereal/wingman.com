@@ -1,0 +1,4 @@
+name = Wingman Views Random Fix
+description = Fixes duplicate results from Views Random sort.
+core = 7.x
+package = Custom Modules

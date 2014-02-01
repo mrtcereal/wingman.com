@@ -1,0 +1,26 @@
+name = Eventbrite API
+description = Eventbrite API allows you to manage and display Eventbrite events through Drupal.
+package = Eventbrite
+dependencies[] = date_popup
+dependencies[] = entity
+dependencies[] = libraries (>=2.x)
+dependencies[] = views
+configure = admin/eventbrite/config
+core = 7.x
+
+; Views Handlers
+files[] = views/eventbrite_api_handler_field_datetime.inc
+files[] = views/eventbrite_api_handler_field_event_link.inc
+files[] = views/eventbrite_api_handler_field_event_link_delete.inc
+files[] = views/eventbrite_api_handler_field_organizer_link_edit.inc
+files[] = views/eventbrite_api_handler_field_ticket_link_clone.inc
+files[] = views/eventbrite_api_handler_field_ticket_link_clone_other.inc
+files[] = views/eventbrite_api_handler_field_ticket_link_edit.inc
+files[] = views/eventbrite_api_handler_field_venue_link_edit.inc
+
+; Information added by Drupal.org packaging script on 2014-01-17
+version = "7.x-1.0-alpha1"
+core = "7.x"
+project = "eventbrite_api"
+datestamp = "1389981213"
+

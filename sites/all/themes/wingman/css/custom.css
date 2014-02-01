@@ -118,6 +118,135 @@ label {
 	margin: .3em 0;
 }
 
+
+/* views item separator */ 
+span.bull {
+	font-size: .7em;
+}
+
+/* tabs */
+.tabs-primary, .tabs-secondary {
+	background-image: none;
+}
+
+.is-active.tabs-primary__tab {
+	border: 0;
+	background-image: none;
+}
+
+.is-active.tabs-primary__tab a {
+	border: 0;
+	background-image: none;
+	background-color: #CDC7B2;
+	border-radius: 0px;
+	color: #fff;
+	font-size: .9em;
+	font-weight: bold;
+	padding: .5em 1em;
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.tabs-primary__tab {
+	
+	border: 0;
+	
+
+}
+
+.tabs-primary__tab a {
+	border-radius: 0;
+	color: #999;
+	font-size: .9em;
+	font-weight: bold;
+	padding: .5em 1em;
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.tabs-primary__tab a:hover {
+	text-decoration: none;
+}
+
+
+/* pager styles */
+ul.pager {
+	padding-top: 1em !important;
+}
+
+
+
+
+ul.pager li.pager-item, ul.pager li.pager-next, ul.pager li.pager-last, li.pager-first, li.pager-previous  {
+	padding: 0;
+	
+}
+
+li.pager-item a, li.pager-next a, li.pager-last a, li.pager-current, li.pager-first a, li.pager-previous a {
+    display: inline-block;
+    padding: 0px 9px;
+    margin-right: 4px;
+    border-radius: 3px;
+    border: solid 1px #c0c0c0;
+    background: #e9e9e9;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1);
+    font-size: .875em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #717171;
+    text-shadow: 0px 1px 0px rgba(255,255,255, 1);
+}
+
+li.pager-item a:hover, li.pager-next a:hover, li.pager-last a:hover, li.pager-first a:hover, li.pager-previous a:hover {
+    background: #fefefe;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
+    background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE, #f0f0f0);
+}
+
+li.pager-current  {
+    border: none;
+    background: #6C6155;
+    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+    color: #f0f0f0;
+	padding: 0 9px !important;
+    text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+}
+
+/* User register page */
+.page-user-register form {
+	
+}
+
+.page-user-register fieldset {
+	border: 0;
+	padding: 0;
+}
+
+.page-user-register fieldset legend {
+	display: none;
+}
+
+.page-user-register .form-item label {
+    display: block;
+    float: left;
+    padding-right: 10px;
+    text-align: left;
+    width: 10em;
+}
+
+.page-user-register .form-item .description {
+    margin-left: 170px;
+	width: 500px;
+}
+
+.page-user-register .form-item input[type="text"] {
+	width: 500px;
+}
+
+.page-user-register input[type="submit"] {
+	margin-left: 170px;
+}
+
 /* Generic Side Bar block tite */
 
 .region-sidebar-second h2.block-title {
@@ -529,16 +658,26 @@ left: 26px;
 
 p.get-started {
 	padding: 14px 0px 7px 0;
+	margin-bottom: .5em;
 }
 
 a.get-started-button {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-    background-image: -moz-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
+   /* background-image: -moz-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(187,159,74) 0%, rgb(235,227,193) 100%);
-    box-shadow: 0.5px 0.866px 0px 0px rgb( 255, 255, 255 );
-	color: #000;
+    box-shadow: 0.5px 0.866px 0px 0px rgb( 255, 255, 255 );*/
+	color: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: #a92f2f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a92f2f 0%, #ce5454 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a92f2f), color-stop(100%,#ce5454)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a92f2f 0%,#ce5454 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a92f2f 0%,#ce5454 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a92f2f 0%,#ce5454 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a92f2f 0%,#ce5454 100%); /* W3C */
 	font-size: 17px;
 	font-family: "Open Sans";
 	font-weight: bold;
@@ -547,17 +686,21 @@ a.get-started-button {
 	margin: 25px 0px;
 	padding: 5px 10px;
 	text-align: center;
-	text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+	text-shadow: 0.5px 1px 0px rgba( 0, 0, 0, .5);
 	text-transform: uppercase;
 }
 
 
 a.get-started-button:hover {
 	color: #fff;
-	background-image: -moz-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(235,227,193) 0%, rgb(187,159,74) 100%);
-	text-shadow: 1px 1px 1px rgba( 0, 0, 0, .4 );
+	background: #a92f2f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ce5454 0%, #a92f2f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ce5454), color-stop(100%,#a92f2f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ce5454 0%,#a92f2f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ce5454 0%,#a92f2f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ce5454 0%,#a92f2f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ce5454 0%,#a92f2f 100%); /* W3C */
+	text-shadow: 1px 1px 3px rgba( 0, 0, 0, .8 );
 	text-decoration: none;
 }
 
@@ -681,13 +824,13 @@ a.get-started-button:hover {
 }
 
 
-#block-views-wingman-user-friends-block-2 p.add-wingman-button span a.flag-link-confirm {
+#block-views-wingman-user-friends-block-2 p.add-wingman-button span a.flag-link-toggle {
 	-webkit-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
 	box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
 }
 
 
-#block-views-wingman-user-friends-block-2 p.add-wingman-button a.flag-link-confirm {
+#block-views-wingman-user-friends-block-2 p.add-wingman-button a.flag-link-toggle {
 	background-color: #6c6155;
 	-webkit-box-shadow:  0px 2px 2px 0px #665b50;
 	box-shadow:  0px 2px 2px 0px #665b50;
@@ -697,13 +840,40 @@ a.get-started-button:hover {
 	text-transform: uppercase;
 }
 
-#block-views-wingman-user-friends-block-2 p.add-wingman-button a.flag-link-confirm:hover {
+#block-views-wingman-user-friends-block-2 p.add-wingman-button a.flag-link-toggle:hover {
 	color: #ddd0a5;
 	text-decoration: none;
 }
 
 #block-views-wingman-user-friends-block-2 .views-field-privatemsg-link {
 	margin-left: 654px;
+}
+
+#block-views-wingman-user-friends-block-2 .views-field-privatemsg-link a {
+	background: url('../images/message-icon.png') center left no-repeat;
+	padding-left: 35px;
+}
+
+/* Status styles */
+
+/*hide status under status form*/
+#block-statuses-statuses .view-statuses-stream {
+	display: none;
+}
+
+.statuses-update .button, .statuses-update .button:hover {
+	background-color: #6C6155;
+}
+
+#block-statuses-statuses #statuses-replace {
+	width: 636px;
+	padding-bottom: 3em;
+}
+
+.statuses-textarea-wrapper {
+	margin-bottom: .5em;
+	box-shadow: none;
+	padding: 0;
 }
 
 
@@ -765,14 +935,14 @@ ul.user-profile-menu li a.active:hover {
 }
 
 
-.view-content ul.user-list-photos, .view-id-all_wingmen ul {
+.view-content ul.user-list-photos, .view-id-all_wingmen .view-content ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
 
-.view-content ul.user-list-photos li, .view-id-all_wingmen ul li {
+.view-content ul.user-list-photos li  {
 	line-height: 1.4;
 	float: left;
 	margin-right: 1em;
@@ -781,19 +951,67 @@ ul.user-profile-menu li a.active:hover {
 	width: 100px;
 }
 
+
+
 .view-content ul.user-list-photos li img, .view-id-all_wingmen ul li img {
 	height: 100px;
 	width: 100px;
 }
 
-.view-content ul.user-list-photos li .views-field-field-last-name a, .view-id-all_wingmen ul li a {
+.view-content ul.user-list-photos li .views-field-field-last-name a, .view-id-all_wingmen ul li a,  ul.user-list-photos li a {
 	font-size: .875em;
 	font-weight: bold;
 }
 
 
-.view-content ul.user-list-photos li .views-field-city, .view-content ul.user-list-photos li .views-field-php, .view-content ul.user-list-photos li .views-field-province, .view-content ul.user-list-photos li.flag-wrapper, .view-id-all_wingmen .views-field-city, .view-id-all_wingmen .views-field-province {
+.view-content ul.user-list-photos li .views-field-city, .view-content ul.user-list-photos li .views-field-php, .view-content ul.user-list-photos li .views-field-province, .view-content ul.user-list-photos li.flag-wrapper, .view-id-all_wingmen .views-field-city, .view-id-all_wingmen .views-field-province, .view-id-all_wingmen .views-field-php, .view-id-all_wingmen .views-field-field-interests  {
 	font-size: .7em;
+}
+
+
+/*members views*/
+.view-id-all_wingmen ul li.views-row {
+	border-bottom: solid 1px #F4F1E7;
+	clear: both;
+	height: 100px;
+	line-height: 1.15em;
+	margin-top: 1em;
+	padding-bottom: 1em;
+}
+
+.view-id-all_wingmen ul li img {
+	float: left;
+	margin-right: 1em;
+}
+
+.view-id-all_wingmen p.views-field-field-interests {
+	margin: 0;
+}
+
+.view-id-all_wingmen p.add-wingman-button {
+	margin: .5em 0 0 0;
+}
+
+.view-id-all_wingmen p.add-wingman-button span a.flag-link-toggle {
+	-webkit-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
+	box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
+	font-size: .7em;
+}
+
+
+.view-id-all_wingmen p.add-wingman-button a.flag-link-toggle {
+	background-color: #6c6155;
+	-webkit-box-shadow:  0px 2px 2px 0px #665b50;
+	box-shadow:  0px 2px 2px 0px #665b50;
+	color: #fff;
+	font-weight: bold;
+	padding: .5em 1em;
+	text-transform: uppercase;
+}
+
+.view-id-all_wingmen p.add-wingman-button a.flag-link-toggle:hover {
+	color: #ddd0a5;
+	text-decoration: none;
 }
 
 
@@ -826,6 +1044,25 @@ ul.user-profile-menu li a.active:hover {
 }
 
 
+/*recommended wingman block*/
+#block-views-similar-users-block-1 ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#block-views-similar-users-block-1 ul li {
+	padding-right: 10px;
+	float: left;
+	font-size: 0.65em;
+	font-weight: bold;
+	text-align: center;
+	width: 75px;
+}
+
+#block-views-similar-users-block-1 ul li.views-row-last {
+	padding-right: 0px;
+}
 
 /* Members Lists */ 
 .view-id-all_wingmen {}
@@ -1522,11 +1759,17 @@ a.answer-this:hover {
 	padding: 1em 0;
 }
 
-.view-events .views-field-field-event-image img {
+.view-events .views-field-field-event-image, .view-events .views-field-field-event-logo {
 	float: left;
+	width: 100px;
+	min-height: 100px;
 	margin-right: 1em;
-	height: 100px;
 	margin-bottom: 1em;
+}
+
+.view-events .views-field-field-event-image img, .view-events .views-field-field-event-logo img {
+	height: auto;
+	width: 100px;
 }
 
 .view-events .views-row h2 {
@@ -1596,9 +1839,6 @@ a.answer-this:hover {
 	display: none;
 }
 
-.events-distance label[for='edit-distance-1-postal-code'] {
-	content: 'Zip code';
-}
 
 
 .events-distance .form-item-distance-1-search-units {
@@ -1771,7 +2011,85 @@ h2.event-details-title {
 
 
 
+/* Members */
+#block-block-49 {
+	
+}
 
+.region-highlighted #block-block-49 h2.title {
+	color: #6c6155;
+	margin: 0;
+	padding: 0;
+	font-size: 1.7em;
+	text-transform: uppercase;
+}
+
+.region-highlighted #block-block-49 h2.title span {
+	color: #555;
+	font-weight: 300;
+}
+
+.region-highlighted #block-block-49 p {
+	margin-top: 0;
+}
+
+#views-exposed-form-all-wingmen-page label {
+	font-size: .9em;
+}
+
+#views-exposed-form-all-wingmen-page label[for='edit-distance-1'], #views-exposed-form-all-wingmen-page .form-item-distance-1-search-units {
+	display: none;
+}
+
+
+#views-exposed-form-all-wingmen-page label[for='edit-distance-1-search-distance'] {
+	font-size: .9em;
+	text-indent: -999999px;
+}
+
+#views-exposed-form-all-wingmen-page select {
+	font-size: 11px;
+}
+
+#views-exposed-form-all-wingmen-page #edit-distance-1-wrapper {
+	width: 250px;
+}
+
+#views-exposed-form-all-wingmen-page input#edit-distance-1-postal-code {
+	width: 150px;
+	font-size: 11px;
+	
+}
+
+#views-exposed-form-all-wingmen-page .form-item-distance-1-postal-code {
+	float: left;
+	width: 150px;
+	margin-right: .5em;
+}
+
+.form-item-distance-1-search-distance {}
+
+#views-exposed-form-all-wingmen-page .views-submit-button {
+	clear: both;
+	padding: 0;
+}
+
+#views-exposed-form-all-wingmen-page .views-submit-button input {
+	font-size: .9em;
+	margin-top: 1em;
+	
+}
+
+#views-exposed-form-all-wingmen-page input#edit-reset {
+	background: transparent;
+	color: #006699;
+	font-weight: normal;
+	text-transform: lowercase;
+	box-shadow: none;
+	font-size: .9em;
+	padding: 0;
+	margin-top: 1em;
+}
 
 #footer .why-wingman h2.block-title {
 	color: rgb( 221, 208, 165 );
