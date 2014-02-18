@@ -227,15 +227,16 @@ li.pager-current  {
 }
 
 .page-user-register .form-item label {
+
     display: block;
     float: left;
-    padding-right: 10px;
-    text-align: left;
+    padding-right: 20px;
+    text-align: right;
     width: 10em;
 }
 
 .page-user-register .form-item .description {
-    margin-left: 170px;
+    margin-left: 180px;
 	width: 500px;
 }
 
@@ -244,7 +245,58 @@ li.pager-current  {
 }
 
 .page-user-register input[type="submit"] {
-	margin-left: 170px;
+	margin-left: 180px;
+}
+
+.toboggan-unified #login-message {
+	border-bottom: solid 1px #b4ab90;
+	font-size: .9em;
+	color: rgb( 85, 85, 85 );
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	text-align: left;
+}
+
+.toboggan-unified #login-links {
+	font-size: .9em;
+	text-align: left;
+	margin-bottom: 1.5em;
+}
+
+.toboggan-unified #login-links a {
+	border: 0;
+	background-color: #999;
+	-webkit-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
+	box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
+	color: #eaeaea;
+	font-weight: bold;
+	padding: .5em 1em;
+	margin: 1em 1em 1em 0;
+	text-transform: uppercase;
+}
+
+.toboggan-unified #login-links a.lt-active {
+	background: #000;
+	color: #fff;
+}
+
+.toboggan-unified #login-links a:hover, .toboggan-unified #login-links a.lt-active:hover {
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+}
+
+.page-user-register .form-item-conf-mail, .page-user-register .form-type-password-confirm {
+	border-bottom: solid 1px #F4F1E8;
+	padding-bottom: 1.5em;
+}
+
+
+.page-user-register .form-item-pass-pass2 {
+	margin-bottom: 0;
 }
 
 /* Generic Side Bar block tite */
@@ -773,8 +825,9 @@ a.get-started-button:hover {
 	margin-right: 0;
 }
 
-#block-views-featured-events-block-1 ul li img {
+#block-views-featured-events-block-1 ul li .views-field-field-event-logo {
 	padding-bottom: .5em;
+	height: 100px;
 }
 
 #block-views-featured-events-block-1 ul li a {
@@ -1919,9 +1972,10 @@ a.answer-this:hover {
 	padding-right: 5px;
 }
 
-.featured-events-block ul li img {
+.featured-events-block ul li .views-field-field-event-logo {
 	float: left;
 	padding-right: 8px;
+	width: 150px;
 }
 
 .featured-events-block ul li a {
@@ -2210,6 +2264,10 @@ h2.event-details-title {
 	height: 1px;
 	visibility: visible;
 	width: 100%;
+}
+
+#footer #block-block-36 a strong{
+	color: #fff !important;
 }
 
 
