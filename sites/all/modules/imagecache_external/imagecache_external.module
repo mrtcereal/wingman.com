@@ -233,7 +233,7 @@ function imagecache_external_theme() {
  * @ingroup themeable
  */
 function theme_imagecache_external($variables) {
-  if ($variables['path'] = imagecache_external_generate_path($variables['path'], $variables['style_name'])) {
+  if ($variables['path'] = imagecache_external_generate_path($variables['path'])) {
     return theme('image_style', $variables);
   }
   return FALSE;
@@ -247,10 +247,16 @@ function theme_imagecache_external($variables) {
  */
 function imagecache_external_generate_path($url) {
   // Create the extenal images directory and ensure it's writable.
-  $hash       = md5($url);
-  $filename   = $hash . '.' . substr(strrchr($url,'.'),1);
-  $scheme     = file_default_scheme();
-  $directory  = $scheme . '://' . variable_get('imagecache_directory', 'externals');
+  $hash = md5($url);
+  $filename = $hash;
+  // Add the extension for real images.
+  if ($extension = pathinfo($url, PATHINFO_EXTENSION)) {
+    if (in_array($extension, array('jpg', 'png', 'gif'))) {
+      $filename .= '.' . $extension;
+    }
+  }
+  $scheme = file_default_scheme();
+  $directory = $scheme . '://' . variable_get('imagecache_directory', 'externals');
   if (file_prepare_directory($directory, FILE_CREATE_DIRECTORY | FILE_MODIFY_PERMISSIONS)) {
     if (file_exists($directory. '/' . $filename)) {
       return $directory. '/' . $filename;
@@ -275,8 +281,9 @@ function imagecache_external_fetch($url, $cachepath) {
     return FALSE;
   }
   // Extract hostname from url.
-  $parsed_url = parse_url($url);
-  $host = $parsed_url['host'];
+  if (!($host = parse_url($url, PHP_URL_HOST))) {
+    return FALSE;
+  }
 
   $list = preg_split('/\s+/', variable_get('imagecache_external_hosts', ''));
 
@@ -292,6 +299,7 @@ function imagecache_external_fetch($url, $cachepath) {
     watchdog('imagecache_external', 'The image %url could not be retrieved, it did not meet the black/white list requirements.', array('%url' => $url));
     return FALSE;
   }
+
   if (!user_access('Fetch external images')) {
     watchdog('imagecache_external', 'The image %url could not be retrieved, the user does not have permission to fetch external images.', array('%url' => $url));
     return FALSE;
@@ -301,11 +309,11 @@ function imagecache_external_fetch($url, $cachepath) {
   $types  = imagecache_external_allowed_mimetypes();
   if (isset($result->data) && $result->data && $code != 400 && $code != 500 && in_array($result->headers['content-type'], $types)) {
     if (variable_get('imagecache_external_management', 'unmanaged') == 'unmanaged') {
-      $file = file_save_data($result->data, $cachepath, FILE_EXISTS_REPLACE);
-      return $file->uri;
+      return file_unmanaged_save_data($result->data, $cachepath, FILE_EXISTS_REPLACE);
     }
     else {
-      return file_unmanaged_save_data($result->data, $cachepath, FILE_EXISTS_REPLACE);
+      $file = file_save_data($result->data, $cachepath, FILE_EXISTS_REPLACE);
+      return $file->uri;
     }
   }
   else {
@@ -384,6 +392,7 @@ function imagecache_external_flush_cache() {
  */
 function imagecache_external_allowed_mimetypes() {
   return array(
+    'image/jpg',
     'image/jpeg',
     'image/png',
     'image/gif',

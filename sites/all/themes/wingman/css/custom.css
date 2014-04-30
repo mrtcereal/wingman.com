@@ -14,6 +14,7 @@ body {
 	background-color: #f4f1e8;
 	color: #666;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 	height: 100%;
 }
 
@@ -2192,33 +2193,21 @@ h2.event-details-title {
 	margin-top: 1em;
 }
 
-#footer .why-wingman h2.block-title {
-	color: rgb( 221, 208, 165 );
-	font-weight: bold;
-	text-transform: uppercase;
+
+
+/* About Section */
+/* footer */
+.page-node-352 h1#page-title {
+	font-size: 2.4em;
+	letter-spacing: .05em;
 	text-align: center;
-    font-family: "Open Sans";
-    font-size: 24px;
-    font-weight: 800;
-	letter-spacing: 3px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    position: relative;
-	text-align: center;
-    text-transform: uppercase;
 }
 
-.why-wingman h2.block-title span {
-	background: #1C1C1C;
-	display: inline-block;
-	position: relative;
-	margin-top: -30px;
-	padding: 7px;
-	z-index: 9;
-	
+.page-node-352 h2 {
+	font-weight: 300;
+	line-height: 1.5em;
+	margin-top: 0;
 }
-
-
 
 
 
@@ -2258,6 +2247,33 @@ h2.event-details-title {
 #footer {
 	color: #999;
 }
+
+#footer .why-wingman h2.block-title {
+	color: rgb( 221, 208, 165 );
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 800;
+	letter-spacing: 3px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    position: relative;
+	text-align: center;
+    text-transform: uppercase;
+}
+
+.why-wingman h2.block-title span {
+	background: #1C1C1C;
+	display: inline-block;
+	position: relative;
+	margin-top: -30px;
+	padding: 7px;
+	z-index: 9;
+	
+}
+
 
 #footer .why-wingman .clear {
 	border-bottom: solid 1px #666;
