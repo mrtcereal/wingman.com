@@ -7,7 +7,9 @@
 
 function wm_profile_view_titles_preprocess_views_view(&$vars) {
 	
-  if ($vars['view']->name == 'wingman_user_activity') {
+  //if ($vars['view']->name == 'wingman_user_activity') {
+	
+	if ($vars['view']->current_display == 'user_activity_page') {
 	
 	// Get user's first name from views argument
 	$view = views_get_current_view();

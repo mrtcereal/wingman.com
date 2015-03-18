@@ -38,6 +38,11 @@
   ?>
 
   <?php print render($content['links']); ?>
+  <?php
+if (node_access('update',$node)){
+print l(t('Edit'),'node/'.$node->nid.'/edit' );
+}
+?>
 
   <?php print render($content['comments']); ?>
 

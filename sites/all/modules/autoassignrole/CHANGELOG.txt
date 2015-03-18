@@ -1,3 +1,30 @@
+autoassignole x.x-x.x, xxxx-xx-xx
+---------------------------------------
+
+
+autoassignole 7.x-1.0-beta4, 2015-02-13
+---------------------------------------
+Issue #2416387 by Stefan Vaduva: User selectable roles not working again.
+
+
+autoassignole 7.x-1.0-beta3, 2014-10-28
+---------------------------------------
+#2313707 by mike.davis: Register by path, shows user choice of roles option.
+#2326029 by mike.davis: Upgrade from version 6 to 7 doesn't update the db schema.
+
+
+autoassignole 7.x-1.0-beta2, 2014-07-31
+---------------------------------------
+#1795536 by dmadruga: Only auto-assign roles to accounts created by an
+  admin.
+by mike.davis: Minor coding standards fixes.
+#1795536 by mike.davis: Updated automated tests to fix a bug.
+#1314668 by thomasgm: Added Sort/order user's role options by predefined.
+#971320 by tigerfinch, mike.davis: Added Administrator configures registration
+  paths, each with customised role assignments.
+#1249458 by mike.davis: Fixed "Single role" with select box?
+
+
 autoassignole 7.x-1.0-beta1, 2013-03-21
 ---------------------------------------
 #971622 by cyberswat: Auto Assign Role only assigns roles automatically when

@@ -1,0 +1,4 @@
+name = Wingman Pending Friend Count
+description = Adds Flag_Friend Pending Count Variable for Use 
+core = 7.x
+package = Custom Modules

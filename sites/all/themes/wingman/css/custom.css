@@ -1,8 +1,24 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,800,800italic,300,300italic);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+	font-size: 60%;
+}
+
+
 html {
 	height: 100%;
 }
 
+* a {	
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
 
 .clear {
 	clear: both;
@@ -988,7 +1004,7 @@ ul.user-profile-menu li a.active:hover {
 }
 
 
-.view-content ul.user-list-photos, .view-id-all_wingmen .view-content ul {
+.view-content ul.user-list-photos, .view-id-all_wingmen .view-content ul, .view-wingman-user-friends .view-content ul, .view-user-dashboard-friends .view-content ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -1006,24 +1022,28 @@ ul.user-profile-menu li a.active:hover {
 
 
 
-.view-content ul.user-list-photos li img, .view-id-all_wingmen ul li img {
+.view-content ul.user-list-photos li img, .view-id-all_wingmen ul li img, .view-wingman-user-friends ul li img {
 	height: 100px;
 	width: 100px;
 }
 
-.view-content ul.user-list-photos li .views-field-field-last-name a, .view-id-all_wingmen ul li a,  ul.user-list-photos li a {
+.view-content ul.user-list-photos li .views-field-field-last-name a, .view-id-all_wingmen ul li a,  ul.user-list-photos li a, .view-wingman-user-friends ul li a, .view-user-dashboard-friends ul li a {
 	font-size: .875em;
 	font-weight: bold;
 }
 
 
-.view-content ul.user-list-photos li .views-field-city, .view-content ul.user-list-photos li .views-field-php, .view-content ul.user-list-photos li .views-field-province, .view-content ul.user-list-photos li.flag-wrapper, .view-id-all_wingmen .views-field-city, .view-id-all_wingmen .views-field-province, .view-id-all_wingmen .views-field-php, .view-id-all_wingmen .views-field-field-interests  {
+.view-content ul.user-list-photos li .views-field-city, .view-content ul.user-list-photos li .views-field-php, .view-content ul.user-list-photos li .views-field-province, .view-content ul.user-list-photos li.flag-wrapper, .view-id-all_wingmen .views-field-city, .view-id-all_wingmen .views-field-province, .view-id-all_wingmen .views-field-php, .view-id-all_wingmen .views-field-field-interests, 
+.view-wingman-user-friends .views-field-php, .view-wingman-user-friends .views-field-city, .view-wingman-user-friends .views-field-province,  .view-wingman-user-friends .views-field-field-interests,
+.view-user-dashboard-friends .views-field-city, .view-user-dashboard-friends .views-field-province, .view-user-dashboard-friends .views-field-php, .view-user-dashboard-friends .views-field-field-interests {
 	font-size: .7em;
 }
 
 
 /*members views*/
-.view-id-all_wingmen ul li.views-row {
+.view-id-all_wingmen ul li.views-row, 
+.view-wingman-user-friends ul li.views-row, 
+.view-user-dashboard-friends ul li.views-row {
 	border-bottom: solid 1px #F4F1E7;
 	clear: both;
 	height: 100px;
@@ -1032,44 +1052,180 @@ ul.user-profile-menu li a.active:hover {
 	padding-bottom: 1em;
 }
 
-.view-id-all_wingmen ul li img {
+.view-id-all_wingmen ul li img, 
+.view-wingman-user-friends ul li img,
+.view-user-dashboard-friends ul li img {
 	float: left;
 	margin-right: 1em;
 }
 
-.view-id-all_wingmen p.views-field-field-interests {
+.view-id-all_wingmen p.views-field-field-interests, 
+.view-wingman-user-friends p.views-field-field-interests,
+.view-user-dashboard-friends p.views-field-field-interests {
 	margin: 0;
 }
 
-.view-id-all_wingmen p.add-wingman-button {
-	margin: .5em 0 0 0;
+.view-id-all_wingmen p.add-wingman-button, 
+.view-wingman-user-friends p.add-wingman-button {
+	margin: .5em 0 1em 0;
+	float: right;
 }
 
-.view-id-all_wingmen p.add-wingman-button span a.flag-link-toggle {
+#block-views-wingman-user-friends-block-2 p.add-wingman-button {
+	float: none;
+	font-size: 1.3em;
+}
+
+.view-id-all_wingmen p.add-wingman-button span a.flag-link-toggle, 
+.view-wingman-user-friends p.add-wingman-button span a.flag-link-toggle {
 	-webkit-box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
 	box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, .4);
 	font-size: .7em;
 }
 
 
-.view-id-all_wingmen p.add-wingman-button a.flag-link-toggle {
-	background-color: #6c6155;
-	-webkit-box-shadow:  0px 2px 2px 0px #665b50;
-	box-shadow:  0px 2px 2px 0px #665b50;
+.view-id-all_wingmen p.add-wingman-button a.flag-link-toggle, 
+.view-wingman-user-friends p.add-wingman-button a.flag-link-toggle {
+	background-color: #444;
+	-webkit-box-shadow:  0px 2px 2px 0px #444;
+	box-shadow:  0px 2px 2px 0px #444;
 	color: #fff;
 	font-weight: bold;
 	padding: .5em 1em;
 	text-transform: uppercase;
 }
 
-.view-id-all_wingmen p.add-wingman-button a.flag-link-toggle:hover {
+.view-id-all_wingmen p.add-wingman-button a.flag-link-toggle:hover, 
+.view-wingman-user-friends p.add-wingman-button a.flag-link-toggle:hover {
 	color: #ddd0a5;
 	text-decoration: none;
 }
 
 
+/* User Dashboard Friend Views */
+
+#user-dashboard .left .inside {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+#user-dashboard .right .inside {
+	margin-left: 1em;
+	padding-left: 2em;
+}
+
+#user-dashboard h2.pane-title {
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.pane-user-dashboard-friends-all-wingmen-pane {
+	clear: both;
+	margin-top: 2.5em;
+}
+
+.view-user-dashboard-friends ul li.views-row {
+	height: 40px;
+}
+
+.view-user-dashboard-friends .views-field-picture img {
+	width: 40px;
+	height: 40px;
+}
+
+.view-user-dashboard-friends .views-field-friend-link, .view-wingman-user-friends .view-content .views-field-friend-link {
+	float: right;
+}
+
+.view-user-dashboard-friends a.flag, .view-wingman-user-friends .view-content a.flag {
+	color: #999;
+	font-size: .6em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.view-user-dashboard-friends a:hover, .view-wingman-user-friends .view-content a:hover {
+	color: #900;
+	text-decoration: none;
+}
+
+/* User Dashboard Friend Views */
+
+.pane-user-private-messages .views-row {
+  border-bottom: solid 1px #F4F1E7;
+	clear: both;
+	line-height: 1.15em;
+	margin-top: 1em;
+	padding-bottom: 1em;
+}
+
+.pane-user-private-messages .views-field-picture {
+	float: left;
+	height: 40px;
+	margin-right: 1em;
+	width: 40px;
+	padding-bottom: 1em;
+}
+
+
+.pane-user-private-messages .views-field-timestamp {
+	color: #999;
+	float: right;
+	font-size: .7em;
+}
+
+.pane-user-private-messages .views-field-timestamp strong {
+	color: #a92f2f;
+}
+
+.pane-user-private-messages .views-field-body p {
+	font-size: .875em;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+}
+
+.pane-user-private-messages .views-field-body a {
+	font-size: .7em;
+	text-transform: uppercase;
+}
+
+.pane-user-private-messages .views-field-realname a {
+	font-size: .875em;
+	font-weight: bold;
+}
+
+.pane-user-private-messages .view-footer p,  .view-user-dashboard-friends .view-footer {
+	font-size: .7em;
+	float: right;
+	margin-top: .3em;
+	
+}
 
 /* profile user activity view */
+#user-dashboard .views-field-picture img, .page-user-activity .views-field-picture img {
+	float: left;
+	height: 40px;
+	margin-right: 1em;
+	width: 40px;
+}
+
+#user-dashboard .pane-wingman-user-activity-panel-pane-1 h2.pane-title {
+	margin-top: 1.5em;
+}
+
+#user-dashboard .view-wingman-user-activity {
+	margin-top: 1.5em;
+}
+
+#user-dashboard .view-wingman-user-activity .views-row, .page-user-activity .views-row {
+	border-bottom: solid 1px #F4F1E7;
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+
 .page-user-activity .view-wingman-user-activity ul {
 	list-style-type: none;
 	margin: 0;
@@ -1188,7 +1344,9 @@ ul.user-profile-menu li a.active:hover {
 }
 
 
-
+.page-user-edit .form-item-field-user-location-und-0-re-geocode-location {
+	display: none;
+}
 
 
 .page-user-edit #edit-picture img {
@@ -1551,7 +1709,7 @@ ul.privatemsg-message-actions {
 	margin-bottom: 2.5em;
 }
 
-.node-type-question-and-answer #comments h2, .node-type-question-and-answer h2.comment-form {
+.node-type-question-and-answer #comments h2, .node-type-question-and-answer h2.comment-form, .node-type-article #comments h2 {
 	border-bottom: solid 1px #f4f1e7;
 	font-size: 1em;
 	color: rgb( 85, 85, 85 );
@@ -1791,7 +1949,148 @@ a.answer-this:hover {
 	margin-bottom: 1em;
 }
 
+
+/* BLOG */
+
+.page-blog .view-id-blog ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.page-blog .view-id-blog ul li.views-row {
+	border-bottom: solid 1px #F4F1E7;
+	clear: both;
+	min-height: 150px;
+	line-height: 1.15em;
+	margin-top: 1em;
+	padding-bottom: 2em;
+}
+
+
+
+.page-blog .view-id-blog ul li img {
+
+}
+
+
+.page-blog .view-blog li h2 a {
+	color: #333;
+	font-size: 36px;
+	letter-spacing: -2px;
+}
+
+.page-blog .view-blog li h2 a:hover {
+	color: #069;
+	text-decoration: none;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+.page-blog .view-blog li h2 {
+	margin-bottom: 0px;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+.page-blog .view-id-blog .by-line, .node-type-article .by-line {
+	color: #999;
+	font-size: .9em;
+	margin-bottom: 10px;
+}
+
+.node-type-article p.by-line {
+	margin-top: 0;
+}
+
+.page-blog .view-id-blog .by-line a {
+	color: #999;
+}
+
+.page-blog .view-id-blog .by-line a:hover {
+	color: #069;
+	text-decoration: none;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+.page-blog .view-id-blog .field-content p {
+	line-height: 1.5;
+}
+
+
+.node-type-article h1#page-title {
+	border-bottom: 0px;
+	color: #333;
+	font-size: 36px;
+	letter-spacing: -2px;
+	line-height: 1.1;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+
+.node-type-article .node-article h2 {
+	color: #333;
+	font-weight: normal;
+	line-height: 1.2;
+	margin-bottom: .2em;
+	margin-top: 1.8em;
+}
+
+.node-type-article .node-article h2 + p {
+	margin-top: 0;
+}
+
+
+/* Popular Articles */
+#block-views-popular-articles-block ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#block-views-popular-articles-block li {
+	border-bottom: solid 1px #ccc9bf;
+	padding-bottom: .5em;
+	margin-bottom: 1em;
+}
+
+#block-views-popular-articles-block h2.pop-article {
+	color: #333;
+	font-size: 1.1em;
+	margin: 0;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+
+
+#block-views-popular-articles-block h2.pop-article a {
+	color: #333;
+	font-weight: 300;
+}
+
+#block-views-popular-articles-block h2.pop-article a:hover {
+	color: #069;
+	text-decoration: none;
+}
+
+
+
+#block-views-popular-articles-block .view-footer p {
+	margin: 0;
+}
+
 /* EVENTS */
+
+
 
 
 /*events slider*/
@@ -1882,7 +2181,7 @@ a.answer-this:hover {
 .view-events .event-info {
 	color: #6c6155;
 	font-size: .75em;
-	line-height: .9em;
+	line-height: 1.5;
 }
 
 
@@ -2066,6 +2365,10 @@ p.event-address, p.event-venue {
 	top: 3em;
 }
 
+
+
+
+
 h2.event-details-title {
 	border-bottom-color: #F4F1E7;
     border-bottom-style: solid;
@@ -2112,6 +2415,37 @@ h2.event-details-title {
 
 
 
+/* Event Create event form for User */
+
+#event-node-form #edit-field-event-description #edit-field-event-description-und-0-format {
+	display: none;
+}
+
+
+#event-node-form fieldset { border:1px solid #cdc7b2; margin-top: 1.5em;}
+
+#event-node-form legend {
+	  padding: 0.2em 0.5em;
+	  background: #cdc7b2;
+	  color:#fff;
+	  font-size:90%;
+	  text-align:left;
+	  }
+}
+
+#edit-field-event-image .description {
+	font-size: .7em;
+	line-height: 1.5;
+	margin-top: 1em;
+}
+
+#edit-field-event-location-und-0 .description {
+	margin-left: 12.5em;
+}
+
+#event-node-form .text-format-wrapper .description {
+	font-size: .85em;
+}
 
 /* Members */
 #block-block-49 {
@@ -2198,8 +2532,9 @@ h2.event-details-title {
 /* About Section */
 /* footer */
 .page-node-352 h1#page-title {
-	font-size: 1.5em;
-	text-align: center;
+	color: #333;
+	font-size: 36px;
+	letter-spacing: -2px;
 }
 
 .page-node-352 h2 {

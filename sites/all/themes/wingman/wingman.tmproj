@@ -2,15 +2,133 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>currentDocument</key>
+	<string>css/custom.css</string>
 	<key>documents</key>
-	<array/>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>css/custom.css</string>
+			<key>lastUsed</key>
+			<date>2014-01-09T18:51:27Z</date>
+			<key>selected</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>css/layouts/fixed.css</string>
+			<key>lastUsed</key>
+			<date>2014-01-09T18:51:27Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>templates/page.tpl.php</string>
+			<key>lastUsed</key>
+			<date>2013-12-31T23:58:03Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>wingman.info</string>
+			<key>lastUsed</key>
+			<date>2013-12-31T19:40:36Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>theme-settings.php</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>template.php</string>
+			<key>lastUsed</key>
+			<date>2014-01-04T23:51:55Z</date>
+		</dict>
+	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>200</integer>
 	<key>metaData</key>
-	<dict/>
+	<dict>
+		<key>css/custom.css</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>86</integer>
+				<key>line</key>
+				<integer>135</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>124</integer>
+		</dict>
+		<key>css/layouts/fixed.css</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>12</integer>
+				<key>line</key>
+				<integer>105</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>78</integer>
+		</dict>
+		<key>template.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>155</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>121</integer>
+		</dict>
+		<key>templates/page.tpl.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>21</integer>
+				<key>line</key>
+				<integer>79</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>31</integer>
+		</dict>
+		<key>wingman.info</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>12</integer>
+				<key>line</key>
+				<integer>95</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>57</integer>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>templates/page.tpl.php</string>
+		<string>wingman.info</string>
+		<string>css/layouts/fixed.css</string>
+		<string>css/custom.css</string>
+		<string>template.php</string>
+	</array>
 	<key>showFileHierarchyDrawer</key>
-	<false/>
+	<true/>
 	<key>windowFrame</key>
-	<string>{{625, 52}, {1319, 1094}}</string>
+	<string>{{1197, 477}, {1034, 941}}</string>
 </dict>
 </plist>

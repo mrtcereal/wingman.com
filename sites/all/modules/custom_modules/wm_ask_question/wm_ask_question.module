@@ -107,7 +107,7 @@ function wm_ask_question_form($form, &$form_state) {
 function wm_ask_question_form_submit($form, &$form_state) {
         // Get the submitted value
         $question = $form_state['values']['question'];
-		$redirect_url = 'http://wingmandev.com/node/add/question-and-answer?edit[title]=' . $question;
+		$redirect_url = 'http://wm-sandbox.com/node/add/question-and-answer?edit[title]=' . $question;
 	//	$form_state['redirect'] = 'http://www.google.com';
 	//	    drupal_redirect_form($form_state);
  

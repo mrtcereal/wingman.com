@@ -1,0 +1,46 @@
+<?php
+function wm_friend_pending_count_flag_friend_get_pending_friends_query($uid) {
+  $query = db_select('flag_friend', 'ff');
+  $query->condition(db_or()
+    ->condition('ff.entity_id', $uid))
+    ->condition('ff.status', 4)
+    ->fields('ff', array('uid', 'entity_id'));
+  $results = $query->execute();
+
+  $friends = array();
+
+  foreach ($results as $friend) {
+    if ($friend->uid == $uid) {
+      $friends[$friend->entity_id] = $friend->entity_id;
+    }
+    elseif ($friend->entity_id == $uid) {
+      $friends[$friend->uid] = $friend->uid;
+    }
+  }
+
+  return $friends;
+} 
+
+function wm_friend_pending_count_flag_friend_get_pending_friends($uid, $reset = NULL) {
+  static $cache = array();
+
+  if (!isset($cache[$uid]) || $reset) {
+    $cache[$uid] = array();
+    $friends = MYMODULE_flag_friend_get_pending_friends_query($uid);
+    foreach ($friends as $friend) {
+      $cache[$uid][$friend] = (array) user_load($friend);
+    }
+  }
+  return $cache[$uid];
+}
+
+function wm_friend_pending_count_flag_friend_get_pending_friend_count($uid, $reset = NULL) {
+  static $friend_count_pending;
+
+  if (!isset($friends[$uid]) || $reset) {
+    $friends = wm_friend_pending_count_flag_friend_get_pending_friends_query($uid);
+    $friend_count_pending = count($friends);
+  }
+
+  return $friend_count_pending;
+}

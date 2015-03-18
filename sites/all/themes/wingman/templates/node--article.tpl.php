@@ -1,0 +1,56 @@
+<?php
+/**
+ * @file
+ * Returns the HTML for a node.
+ *
+ * Complete documentation for this file is available online.
+ * @see https://drupal.org/node/1728164
+ */
+?>
+<article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+
+  <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
+    <header>
+      <?php print render($title_prefix); ?>
+      <?php if (!$page && $title): ?>
+        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+
+      <?php if ($display_submitted): ?>
+        <p class="submitted">
+          <?php print $user_picture; ?>
+          <?php print $submitted; ?>
+        </p>
+		
+      <?php endif; ?>
+	
+      <?php if ($unpublished): ?>
+        <mark class="unpublished"><?php print t('Unpublished'); ?></mark>
+      <?php endif; ?>
+    </header>
+  <?php endif; ?>
+	<?php $author = user_load($node->uid);?>
+  <p class="by-line">By <?php print $name; ?> | <?php print format_date($created, $type = 'custom', $format = 'F j, Y', $timezone = NULL, $langcode = NULL);
+		?> | <?php if ($comment_count == 1) { 
+				print '1 comment'; 
+				} else { 
+				print $comment_count . ' comments';  
+				} ?></p>	
+  <?php
+    // We hide the comments and links now so that we can render them later.
+    hide($content['comments']);
+    hide($content['links']);
+    print render($content);
+  ?>
+
+  <?php print render($content['links']); ?>
+  <?php
+if (node_access('update',$node)){
+print l(t('Edit'),'node/'.$node->nid.'/edit' );
+}
+?>
+
+  <?php print render($content['comments']); ?>
+
+</article>

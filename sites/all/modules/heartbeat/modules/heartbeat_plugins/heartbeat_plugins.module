@@ -233,15 +233,36 @@ function heartbeat_plugins_field_extra_fields() {
  */
 function heartbeat_plugins_flag_default_flags() {
 
-  $flags = array();
-  foreach (heartbeat_plugins_get_active_plugins() as $pluginWrapper) {
-    $plugin = $pluginWrapper->getPlugin();
-    if ($plugin instanceof HeartbeatFlagPlugin && $plugin->hasDefaultFlags()) {
-      $flags += $plugin->flagDefaults();
-    }
-  }
+  	$flags = array();
+	// Exported flag: "I like".
+	$flags['like'] = array(
+	  'entity_type' => 'heartbeat_activity',
+	  'title' => 'I like',
+	  'global' => 0,
+	  'types' => array(),
+	  'flag_short' => 'I like this',
+	  'flag_long' => 'you like this',
+	  'flag_message' => '[heartbeat_activity:flag-like-count-linked] liked this',
+	  'unflag_short' => 'I don\'t like this',
+	  'unflag_long' => 'you don\'t like this',
+	  'unflag_message' => 'you don\'t like this',
+	  'unflag_denied_text' => '',
+	  'link_type' => 'toggle',
+	  'weight' => 0,
+	  'api_version' => 3,
+	  'module' => 'heartbeat_plugins',
+	  'status' => FALSE,
+	  'import_roles' => array(
+	    'flag' => array(
+	      0 => 2,
+	    ),
+	    'unflag' => array(
+	      0 => 2,
+	    ),
+	  ),
+	);
+	return $flags;
 
-  return $flags;
 
 }
 
@@ -759,3 +780,7 @@ function theme_heartbeat_flagging($variables) {
     'attributes' => array('class' => 'avatar')));
   return '<div class="heartbeat-username">' . l($variables['name'], 'user/' . $variables['uid'], array('html' => TRUE)) . '</div><div class="heartbeat-avatar">' . l($newarray, 'user/' . $variables['uid'], array('html' => TRUE)) . '</div>';
 }
+
+
+
+
